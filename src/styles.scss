@@ -1,1 +1,163 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Syne";
+  src: url("./assets/font/syne/Syne-Medium.ttf") format("truetype");
+  font-weight: normal; /* Normal für Regular */
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("./assets/font/syne/Syne-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("./assets/font/syne/Syne-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold */
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("./assets/font/syne/Syne-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url("./assets/font/syne/Syne-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* ExtraBold */
+}
+
+@font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-Black.ttf") format("truetype");
+    font-weight: 900; /* Black */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic; /* Black Italic */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-Bold.ttf") format("truetype");
+    font-weight: 700; /* Bold */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic; /* Bold Italic */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-ExtraBold.ttf") format("truetype");
+    font-weight: 800; /* ExtraBold */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic; /* ExtraBold Italic */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-ExtraLight.ttf") format("truetype");
+    font-weight: 200; /* ExtraLight */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-ExtraLightItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic; /* ExtraLight Italic */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-Italic.ttf") format("truetype");
+    font-weight: normal; /* Italic */
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-Light.ttf") format("truetype");
+    font-weight: 300; /* Light */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic; /* Light Italic */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-Medium.ttf") format("truetype");
+    font-weight: 500; /* Medium */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic; /* Medium Italic */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-Regular.ttf") format("truetype");
+    font-weight: normal; /* Regular */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-SemiBold.ttf") format("truetype");
+    font-weight: 600; /* SemiBold */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic; /* SemiBold Italic */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-Thin.ttf") format("truetype");
+    font-weight: 100; /* Thin */
+  }
+  
+  @font-face {
+    font-family: "Overpass";
+    src: url("./assets/font/overpass/Overpass-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic; /* Thin Italic */
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fffcf3;
+  cursor: url("./assets/img/cursor/cursor.svg") 16 16, auto;
+  font-family: Syne, sans-serif;
+}
+
+app-hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}

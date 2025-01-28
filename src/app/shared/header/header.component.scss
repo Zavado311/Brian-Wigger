@@ -1,0 +1,14 @@
+.overall {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1440px;
+  height: 90px;
+  align-items: center;
+  img {
+    height: 32px;
+    width: 40px;
+    display: flex;
+  }
+}
