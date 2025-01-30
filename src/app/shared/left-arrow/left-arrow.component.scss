@@ -1,0 +1,16 @@
+.overallArrow {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    max-width: 1440px;
+    margin: auto;
+    .pictureArrow {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      img {
+        height: 300px;
+      }
+    }
+  }
+  

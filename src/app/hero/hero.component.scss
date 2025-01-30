@@ -13,3 +13,74 @@
   text-align: center;
 }
 
+.heroDescription {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+}
+
+.overline {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+.spaceline {
+  flex: 1;
+}
+
+.line {
+  border-bottom: 3px solid black;
+  flex: 1;
+}
+
+.heroName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px;
+  font-family: Overpass;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.025em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #00bc8f;
+}
+
+.heroDirections {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 1440px;
+  margin: auto;
+
+  .emailConnection {
+    transform: rotate(-90deg);
+    position: static;
+    font-size: 22px;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    bottom: 0;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .scrollDownText {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+  }
+
+  img {
+    height: 180px;
+    width: 116px;
+  }
+}

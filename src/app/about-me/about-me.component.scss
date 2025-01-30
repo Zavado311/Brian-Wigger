@@ -1,0 +1,94 @@
+.overallAboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 1440px;
+  margin: auto;
+}
+h2 {
+  font-family: Syne;
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 78px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.aboutMe {
+  width: 619px;
+  font-size: 22px;
+  font-family: "Overpass";
+
+  h2 {
+    padding-bottom: 48px;
+  }
+
+  p {
+    padding-bottom: 24px;
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  article {
+    padding-bottom: 48px;
+    ul {
+      list-style: none;
+      padding-bottom: 24px;
+    }
+  }
+
+  button {
+    display: flex;
+    margin: auto;
+    height: 68px;
+    padding: 20px 60px;
+    gap: 10px;
+    border: 4px solid #000000;
+    background-color: unset;
+    font-size: 23px;
+    transition: transform 125ms;
+
+    &:hover {
+      cursor: url("./../../assets/img/cursor/cursorPointer.svg") 16 16, pointer;
+      transform: scaleX(1.1);
+      font-weight: 700;
+    }
+
+    &:active {
+      transform: scaleX(1.1);
+      font-weight: 700;
+      background-color: #000000;
+      color: #fffcf3;
+    }
+  }
+}
+
+.showPicture {
+  position: relative;
+  top: 150px;
+  height: 100%;
+  img {
+    height: 533px;
+    width: 533px;
+    &:hover + .border {
+      display: block;
+    }
+  }
+
+  .border {
+    display: none;
+    background: transparent;
+    border: #000000 solid 4px;
+    height: 533px;
+    width: 533px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    &:hover {
+      display: block;
+    }
+  }
+}
