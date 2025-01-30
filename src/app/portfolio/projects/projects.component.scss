@@ -1,0 +1,50 @@
+.projectCard {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 120px;
+  width: 1440px;
+
+  .description {
+    width: 479px;
+
+    .listNumber {
+      display: flex;
+      justify-content: flex-end;
+
+      font-family: Syne, sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .informationAboutProject {
+      flex-direction: column;
+    }
+  }
+}
+
+.reverseIt {
+  display: flex;
+  flex-direction: row-reverse;
+
+  .reversedDescription {
+    width: 479px;
+
+    .listNumber {
+      display: flex;
+      justify-content: flex-start;
+      width: 1440px;
+      font-family: Syne, sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+
+      .informationAboutProject {
+        position: absolute;
+        top: 545PX;
+        right: 2500PX;
+        flex-direction: column;
+      }
+    }
+  }
+}

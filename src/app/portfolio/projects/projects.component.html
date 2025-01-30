@@ -1,5 +1,19 @@
-<div class="project-card">
-    <img [src]="project.photo" alt="{{ project.title }}">
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.description }}</p>
+<div class="projectCard" [ngClass]="reversed ? 'reverseIt' : ''">
+  <img
+    src="./../../../assets/img/projects/{{ project.photo }}"
+    alt="{{ project.photo }}"
+  />
+  <div [ngClass]="reversed ? 'reversedDescription' : 'description'">
+    <div class="listNumber">
+      <p>{{ number + 1 }}</p>
+      /
+      <p>{{ length }}</p>
+    </div>
+    <div [ngClass]="reversed ? 'ReversedInformationAboutProject' : 'InformationAboutProject'">
+      <h3>{{ project.title }}</h3>
+      <div>{{ project.usedProgramms }}</div>
+      div>
+      <div>{{ project.description }}</div>
+    </div>
   </div>
+</div>

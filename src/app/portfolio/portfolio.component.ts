@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { CommonModule } from '@angular/common';
 
@@ -9,10 +9,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })
-export class PortfolioComponent {
+export class PortfolioComponent{
+  
   projects = [
     {
-      photo: '',
+      photo: 'join/join.svg',
       title: 'Join',
       usedProgramms: 'JavaScript | HTML | CSS | Firebase',
       description:
@@ -21,8 +22,8 @@ export class PortfolioComponent {
       link: '',
     },
     {
-      photo: '',
-      title: '¡El Pollo Loco!',
+      photo: 'elPolloLoco/elPolloLoco.svg',
+      title: 'El Pollo Loco',
       usedProgramms: 'JavaScript | HTML | CSS',
       description:
         'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
@@ -30,8 +31,8 @@ export class PortfolioComponent {
       link: '',
     },
     {
-      photo: '',
-      title: 'Pokédex',
+      photo: 'pokedex/pokedex.svg',
+      title: 'pokedex',
       usedProgramms: 'JavaScript | HTML | CSS | API',
       description:
         'Based on the PokéAPI a simple library that provides and catalogues pokemon information. ',
