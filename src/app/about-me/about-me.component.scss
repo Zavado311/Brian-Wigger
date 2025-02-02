@@ -42,6 +42,9 @@ h2 {
 
   button {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
     margin: auto;
     height: 68px;
     padding: 20px 60px;
@@ -52,7 +55,7 @@ h2 {
     transition: transform 125ms;
 
     &:hover {
-      cursor: url("./../../assets/img/cursor/cursorPointer.svg") 16 16, pointer;
+      cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
       transform: scaleX(1.1);
       font-weight: 700;
     }

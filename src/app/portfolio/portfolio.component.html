@@ -1,9 +1,16 @@
 <div class="overPortfolio">
-    <app-projects 
-      *ngFor="let project of projects; let i = index" 
-      [project]="project"
-      [reversed]="i % 2 !== 0"
-      [number]="i"
-      [length]="projects.length">
-    </app-projects>
-  </div>
+  <h2>Portfolio</h2>
+  <p>
+    Explore a selection of my work here - Interact with projects to see my
+    skills in action.
+  </p>
+
+  <app-projects
+    *ngFor="let project of projects; let i = index"
+    [project]="project"
+    [reversed]="i % 2 !== 0"
+    [number]="i"
+    [length]="projects.length"
+  >
+  </app-projects>
+</div>

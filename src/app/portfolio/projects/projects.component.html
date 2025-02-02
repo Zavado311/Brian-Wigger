@@ -1,19 +1,15 @@
-<div class="projectCard" [ngClass]="reversed ? 'reverseIt' : ''">
-  <img
-    src="./../../../assets/img/projects/{{ project.photo }}"
-    alt="{{ project.photo }}"
-  />
-  <div [ngClass]="reversed ? 'reversedDescription' : 'description'">
-    <div class="listNumber">
-      <p>{{ number + 1 }}</p>
-      /
-      <p>{{ length }}</p>
+<div class="overProject">
+  <div class="number" [ngClass]="reversed ? 'reversedNumber' : ''">{{ number + 1 }} / {{ length }}</div>
+  <div class="aboutProject" (mouseleave)="resetInformations() [ngClass]="reversed ? 'reversedClass' : ''">
+    <div class="imageProject">
+      <img (mouseenter)="moveInformations()" src="./../../../assets/img/projects/{{ project.photo }}" alt="" />
+      <div class="showBorder" [ngClass]="reversed ? 'reversedShowBorder' : ''"></div>
     </div>
-    <div [ngClass]="reversed ? 'ReversedInformationAboutProject' : 'InformationAboutProject'">
-      <h3>{{ project.title }}</h3>
-      <div>{{ project.usedProgramms }}</div>
-      div>
-      <div>{{ project.description }}</div>
+    <div class="informations" [ngClass]="reversed ? 'reversedInformation' : ''">
+      <div class="title">{{ project.title }}</div>
+      <div class="usedProgramms">{{ project.usedProgramms }}</div>
+      <div class="description">{{ project.description }}</div>
+      <button>Github</button>
     </div>
   </div>
 </div>

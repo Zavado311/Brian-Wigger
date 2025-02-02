@@ -5,9 +5,16 @@
   max-width: 1440px;
   height: 90px;
   align-items: center;
-  img {
-    height: 32px;
-    width: 40px;
-    display: flex;
+
+  .hamburger {
+    img {
+      height: 32px;
+      width: 40px;
+      display: flex;
+      &:hover {
+        cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+          pointer;
+      }
+    }
   }
 }

@@ -1,0 +1,13 @@
+<div class="overReferences">
+  <h2>References</h2>
+  <p>
+    I thrive both independently and as part of a team. Here&apos;s what my
+    colleagues have to say about working with me.
+  </p>
+  <div class="setSizeFeedbacks">
+    <app-reference-box
+      *ngFor="let reference of references; let i = index"
+      [reference]="reference"
+    ></app-reference-box>
+  </div>
+</div>

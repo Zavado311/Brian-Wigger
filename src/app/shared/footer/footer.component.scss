@@ -1,0 +1,50 @@
+.blackBackground {
+  background-color: black;
+  padding: -1px;
+  .overFooter {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    gap: 8px;
+    color: #fffcf3;
+    padding-bottom: 24px;
+    .aboutMe {
+      display: flex;
+      vertical-align: middle;
+      width: 100%;
+      justify-content: space-between;
+
+      .copyright {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        font-size: 22px;
+      }
+
+      .socialMedia ul {
+        display: flex;
+        gap: 58px;
+        flex-direction: row;
+        list-style-type: none;
+      }
+    }
+    .legalNotice {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+
+      .legalNoticeText {
+        display: flex;
+        font-size: 16px;
+      }
+    }
+
+    .section {
+      width: 1440px;
+      display: flex;
+      position: relative;
+    }
+  }
+}

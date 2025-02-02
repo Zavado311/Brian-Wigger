@@ -1,0 +1,17 @@
+.overFeedback {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  gap: 24px;
+  border: 4px solid black;
+  font-size: 18px;
+  min-height: 344px;
+  img {
+    padding-top: 26px;
+  }
+
+  .feedbacktext {
+    padding: 0 6px;
+  }
+}

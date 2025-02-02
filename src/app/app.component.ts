@@ -7,6 +7,9 @@ import { RightArrowComponent } from './shared/right-arrow/right-arrow.component'
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { LeftArrowComponent } from './shared/left-arrow/left-arrow.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ReferencesComponent } from './references/references.component';
+import { ContactformComponent } from './contactform/contactform.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +23,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     LeftArrowComponent,
     PortfolioComponent,
     AboutMeComponent,
+    ReferencesComponent,
+    ContactformComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

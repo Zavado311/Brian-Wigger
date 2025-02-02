@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './portfolio.component.scss',
 })
 export class PortfolioComponent{
-  
   projects = [
     {
       photo: 'join/join.svg',

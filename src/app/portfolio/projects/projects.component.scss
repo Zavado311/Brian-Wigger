@@ -1,50 +1,114 @@
-.projectCard {
+.overProject {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 120px;
   width: 1440px;
+  display: flex;
+  flex-direction: column;
 
-  .description {
-    width: 479px;
+  .number {
+    font-size: 48px;
+    position: absolute;
+    right: 0;
+  }
 
-    .listNumber {
-      display: flex;
-      justify-content: flex-end;
-
-      font-family: Syne, sans-serif;
-      font-size: 48px;
-      font-weight: 700;
+  .imageProject img {
+    filter: grayscale(1);
+    height: 393px;
+    &:hover {
+      filter: grayscale(0);
     }
 
-    .informationAboutProject {
+    &:hover + .showBorder {
+      display: block;
+    }
+  }
+  .imageProject:hover ~ .informations {
+    left: 820px;
+  }
+  
+
+  .aboutProject {
+    padding-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1440px;
+    height: 460px;
+    .imageProject {
+      position: relative;
+      z-index: 2;
+      .showBorder {
+        display: none;
+        background: transparent;
+        border: #000000 solid 4px;
+        height: 393px;
+        width: 620px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        pointer-events: none;
+      }
+    }
+
+    .title {
+      font-size: 45px;
+      font-weight: 800;
+    }
+
+    .usedProgramms {
+      font-size: 23px;
+      color: #00bc8f;
+      font-weight: 400;
+    }
+
+    .informations {
+      // position: absolute;
+      display: flex;
+      transition: left 125ms ease-in-out;
+      z-index: 1;
       flex-direction: column;
+      vertical-align: middle;
+      justify-content: center;
+      width: 620px;
+      height: 393px;
+      gap: 4px;
+      position: absolute;
+      left: 0;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        width: 189px;
+        height: 68px;
+        margin: 12px 0 0 0;
+        padding: 20px 60px;
+        gap: 10px;
+        border: 4px solid #000000;
+        background-color: unset;
+        font-size: 23px;
+        transition: transform 125ms;
+      }
     }
   }
 }
 
-.reverseIt {
-  display: flex;
-  flex-direction: row-reverse;
+.reversedNumber {
+  right: unset;
+  left: 0;
+}
 
-  .reversedDescription {
-    width: 479px;
+.reversedInformation {
+  left: 820px !important;
+}
 
-    .listNumber {
-      display: flex;
-      justify-content: flex-start;
-      width: 1440px;
-      font-family: Syne, sans-serif;
-      font-size: 48px;
-      font-weight: 700;
+.reversedClass {
+  flex-direction: row-reverse !important;
 
-      .informationAboutProject {
-        position: absolute;
-        top: 545PX;
-        right: 2500PX;
-        flex-direction: column;
-      }
-    }
+  .reversedShowBorder {
+    top: 20px !important;
+    right: 20px !important;
+    left: unset !important;
   }
 }
