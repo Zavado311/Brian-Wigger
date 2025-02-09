@@ -16,6 +16,11 @@
     display: flex;
     justify-content: center;
     padding: 64px 0 48px 0;
+    width: fit-content;
+    margin: 0 auto;
+    &:hover {
+      color: #00bc8f;
+    }
   }
 
   p {
@@ -24,21 +29,16 @@
     padding-bottom: 40px;
   }
 
-.setSizeFeedbacks {
-display: flex;
-justify-content: center;
-gap: 24px;
-
-app-reference-box {
+  .setSizeFeedbacks {
     display: flex;
-    flex-direction: row;
-    flex: 1;
-    max-width: 398px;
-    
-}    
-}
+    justify-content: center;
+    gap: 24px;
 
-
-
-
+    app-reference-box {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      max-width: 398px;
+    }
+  }
 }

@@ -1,6 +1,17 @@
 <div class="overall">
-  <div class="logo">[BW]</div>
-  <div class="hamburger">
-    <img src="./../../../assets/img/hamburger.svg" alt="" />
-  </div>
+  <nav>
+    <div class="navOptions">
+      <div class="logo">[BW]</div>
+      <div class="hamburger">
+        <img
+          (click)="openMenu ? closeMenu() : showMenu()"
+          src="./../../../assets/img/{{ showHamburger }}"
+          alt=""
+        />
+      </div>
+    </div>
+  </nav>
+  <app-menu-hamburger
+    [ngClass]="{ 'show-overlay-menu': openMenu }"
+  ></app-menu-hamburger>
 </div>

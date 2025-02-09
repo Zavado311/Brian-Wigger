@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  AfterViewInit,
+  ElementRef,
+} from '@angular/core';
 
 @Component({
   selector: 'app-right-arrow',
@@ -8,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './right-arrow.component.html',
   styleUrl: './right-arrow.component.scss',
 })
-export class RightArrowComponent implements OnInit {
+export class RightArrowComponent implements AfterViewInit {
   showImageArrow: string = '';
 
   scrollDownImages: string[] = [
@@ -17,9 +23,26 @@ export class RightArrowComponent implements OnInit {
     'arrows/arrowFromRight3.svg',
   ];
 
-  ngOnInit(): void {
-    this.startScrollDownAnimation();
+  @ViewChild('yourElement') yourElement!: ElementRef;
+
+  ngAfterViewInit() {
+    const threshold = 0.2; // how much % of the element is in view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.startScrollDownAnimation();
+       
+            observer.disconnect(); // disconnect if you want to stop observing else it will rerun every time its back in view. Just make sure you disconnect in ngOnDestroy instead
+          }
+        });
+      },
+      { threshold }
+    );
+    observer.observe(this.yourElement.nativeElement);
   }
+
+  ngOnInit(): void {}
 
   startScrollDownAnimation() {
     let i: number = 0;
@@ -27,6 +50,7 @@ export class RightArrowComponent implements OnInit {
       this.showImageArrow = this.scrollDownImages[i];
       if (i == this.scrollDownImages.length - 1) {
         i = 0;
+        
       } else {
         i++;
       }

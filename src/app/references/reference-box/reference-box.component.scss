@@ -7,8 +7,21 @@
   border: 4px solid black;
   font-size: 18px;
   min-height: 344px;
+
+  &:hover {
+    border: 4px solid #00bc8f;
+  }
+
+  &:hover img {
+    filter: invert(41%) sepia(95%) saturate(844%) hue-rotate(131deg)
+      brightness(103%) contrast(101%);
+  }
+
   img {
     padding-top: 26px;
+  }
+
+  .autor {
   }
 
   .feedbacktext {

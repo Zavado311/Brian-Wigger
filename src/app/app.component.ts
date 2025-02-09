@@ -10,6 +10,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ReferencesComponent } from './references/references.component';
 import { ContactformComponent } from './contactform/contactform.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { MenuHamburgerComponent } from './menu-hamburger/menu-hamburger.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +19,8 @@ import { FooterComponent } from './shared/footer/footer.component';
   imports: [
     CommonModule,
     RouterOutlet,
+    HeaderComponent,
+    MenuHamburgerComponent,
     HeroComponent,
     RightArrowComponent,
     MySkillsComponent,
@@ -25,7 +29,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     AboutMeComponent,
     ReferencesComponent,
     ContactformComponent,
-    FooterComponent
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

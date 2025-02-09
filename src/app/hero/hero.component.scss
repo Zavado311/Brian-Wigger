@@ -68,6 +68,11 @@
     bottom: 0;
     justify-content: flex-start;
     margin-bottom: 30px;
+    a {
+      color: black;
+      text-decoration: none;
+      cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
+    }
   }
 
   .scrollDownText {

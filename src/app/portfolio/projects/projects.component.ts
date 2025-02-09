@@ -7,9 +7,11 @@ import { PortfolioComponent } from '../portfolio.component';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss',
+  styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
+mouseOnProject = false;
+
 
   @Input() project!: {
     photo: string;
@@ -25,7 +27,14 @@ export class ProjectsComponent {
   @Input() length!: number; 
 
 
-
+showInformations() {
+  this.mouseOnProject = true;
   
+}
+  
+hideInformations() {
+  this.mouseOnProject = false;
+
+}
 
 }

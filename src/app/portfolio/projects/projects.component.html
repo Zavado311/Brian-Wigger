@@ -1,11 +1,37 @@
 <div class="overProject">
-  <div class="number" [ngClass]="reversed ? 'reversedNumber' : ''">{{ number + 1 }} / {{ length }}</div>
-  <div class="aboutProject" (mouseleave)="resetInformations() [ngClass]="reversed ? 'reversedClass' : ''">
-    <div class="imageProject">
-      <img (mouseenter)="moveInformations()" src="./../../../assets/img/projects/{{ project.photo }}" alt="" />
-      <div class="showBorder" [ngClass]="reversed ? 'reversedShowBorder' : ''"></div>
+  <div class="number" [ngClass]="reversed ? 'reversedNumber' : ''">
+    {{ number + 1 }} / {{ length }}
+  </div>
+  <div
+    class="aboutProject"
+    (mouseleave)="hideInformations()"
+    [ngClass]="reversed ? 'reversedClass' : ''"
+  >
+    <div
+      class="imageProject"
+      [ngClass]="{'reversedImageProject' : reversed, 'showColoredImage' : mouseOnProject}"
+      (mouseenter)="showInformations()"
+    >
+      <img [ngClass]="mouseOnProject ? 'showColoredImage' : ''" src="./../../../assets/img/projects/{{ project.photo }}" alt="" />
+      <div
+        class="showBorder"
+        [ngClass]="{ 'reversedShowBorder': reversed, 'showIt ': mouseOnProject }"
+      ></div>
+      <div class="showLinkArrow" [ngClass]="reversed ? 'reversedArrowLink' : ''" >
+        <img
+          class="showLinkArrowImg" [ngClass]="mouseOnProject ? 'showIt  showAnimationArrow' : ''"
+          src="./../../../assets/img/LinkArrow.svg"
+          alt=""
+        />
+      </div>
     </div>
-    <div class="informations" [ngClass]="reversed ? 'reversedInformation' : ''">
+    <div
+      class="informations"
+      [ngClass]="{
+        showTheInformation: mouseOnProject && !reversed,
+        reversedInformation: reversed && !mouseOnProject
+      }"
+    >
       <div class="title">{{ project.title }}</div>
       <div class="usedProgramms">{{ project.usedProgramms }}</div>
       <div class="description">{{ project.description }}</div>

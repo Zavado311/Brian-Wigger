@@ -20,8 +20,11 @@
           <div class="labelline">Your message</div>
         </div>
         <div class="privacyPolicy">
-          <input class="checkboxPrivacyPolicy" type="checkbox" />
-          <div class="informationprivacyPolicy">
+          <div class="overCheckboxPrivacyPolicy">
+            <input class="checkboxPrivacyPolicy" type="checkbox" />
+            <div class="imageCheckbox" (click)="setCheckbox()"><img [src]="ImageOfCheckbox" alt="Image of checkbox"></div>
+          </div>
+          <div class="informationPrivacyPolicy">
             I've read the <span>privacy policy</span>and agree to the processing
             of my data as outlined.
           </div>

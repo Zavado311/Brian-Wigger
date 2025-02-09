@@ -1,0 +1,162 @@
+.overall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fffcf3;
+  z-index: 9999;
+  margin: 0 auto;
+
+  .centerAll {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1440px;
+
+    .options {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      margin: 0 auto;
+      top: 10%;
+      flex-direction: column;
+      gap: 39px;
+      font-family: "Syne";
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 96px;
+      letter-spacing: -0.025em;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      list-style-type: none;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 167px;
+        width: 600px;
+
+        a {
+          color: black;
+          text-decoration: none;
+          &:hover {
+            cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0,
+              pointer;
+          }
+        }
+      }
+
+      .hoverLink {
+        position: relative;
+      }
+      /* Linke vertikale Linie (startet in der Mitte) */
+      .hoverLink::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%; /* Startet in der Mitte des Elements */
+        width: 4px; /* Dicke der Linie */
+        height: 50%; /* Linie geht von der Mitte bis nach unten */
+        background-color: black;
+        transform-origin: bottom;
+        transition: none; /* Kein animiertes Zurückkehren */
+      }
+
+      .hoverLink:hover::before {
+        transform: scaleY(0); /* Linie schrumpft nach unten */
+        transition: transform 0.2s ease-in-out; /* Animation nur beim Hovern */
+      }
+
+      /* Untere horizontale Linie */
+      .hoverLink::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px; /* Abstand unterhalb des Textes */
+        width: 160px; /* Startbreite des Balkens */
+        height: 4px; /* Höhe des Balkens */
+        background-color: black;
+        transition: none; /* Kein animiertes Zurückkehren */
+      }
+
+      .hoverLink:hover::after {
+        transform: translateX(435px); /* Bewegt den Balken nach rechts */
+        transition: transform 0.2s ease-in-out 0.2s; /* Animation nur beim Hovern */
+      }
+    }
+  }
+
+  .sayHiBackground {
+    background-image: url("./../../assets/img/backgroundImageMenu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 28%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    vertical-align: middle;
+    flex-direction: row;
+
+    .texts {
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      vertical-align: middle;
+      width: 1440px;
+      margin: auto;
+      justify-content: space-between;
+      color: white;
+      .sayHiText {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        display: flex;
+        vertical-align: middle;
+        .textSayHi {
+          font-weight: 800;
+          font-size: 78px;
+          &:hover {
+            color: #00bc8f;
+          }
+        }
+        .emailConnection {
+          font-family: "Overpass";
+          font-size: 23px;
+          font-weight: 300;
+          a {
+            color: #fffcf3;
+            text-decoration: none;
+            cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0,
+              pointer;
+          }
+        }
+      }
+      .linksSocialMedia {
+        display: flex;
+        vertical-align: bottom;
+        text-align: center;
+        align-items: flex-end;
+        ul {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          gap: 32px;
+          list-style-type: none;
+          li img:hover {
+            cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0,
+              pointer;
+          }
+        }
+      }
+    }
+  }
+}
