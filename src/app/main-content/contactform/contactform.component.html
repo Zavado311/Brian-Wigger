@@ -1,0 +1,75 @@
+<div class="backgroundImage">
+  <div class="overContactform">
+    <h2>Say Hi!</h2>
+
+    <div class="centerIt">
+      <h3>Want to discuss a new proyect?</h3>
+      <p>Say hello! Let's discuss your ideas and make it happen</p>
+
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="entryarea">
+          <input
+          #name="ngModel"
+            [(ngModel)]="contactData.name"
+            type="text"
+            name="name"
+            required
+          />
+          <div class="labelline">Your name</div>
+        </div>
+        @if(!name.valid && name.touched && !name.disabled) {
+          <span class="completeField">Your name is empty</span>
+        }
+        <div class="entryarea">
+          <input
+            #email="ngModel"
+            [(ngModel)]="contactData.email"
+            type="text"
+            name="email"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          />
+          <div class="labelline">Your email</div>
+        </div>
+        @if(!email.valid && email.touched && !email.disabled) {
+        <span class="completeField">Your email is empty</span>
+        }
+        <div class="entryarea setHeight">
+          <textarea
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            class="setHeight"
+            name=""
+            id=""
+            name="message"
+            minlength="4"
+            required
+          ></textarea>
+          <div class="labelline">Your message</div>
+        </div>
+        @if(!message.valid && message.touched && !message.disabled) {
+        <span class="completeTextarea">Your message is empty</span>
+        }
+        <div class="privacyPolicy">
+          <div class="overCheckboxPrivacyPolicy">
+            <input
+              [(ngModel)]="contactData.checkbox"
+              class="checkboxPrivacyPolicy"
+              type="checkbox"
+              name="checkbox"
+              required
+            />
+            <div class="imageCheckbox" (click)="setCheckbox()">
+              <img [src]="ImageOfCheckbox" alt="Image of checkbox" />
+            </div>
+          </div>
+          <div class="informationPrivacyPolicy">
+            I've read the <span>privacy policy</span>and agree to the processing
+            of my data as outlined.
+          </div>
+        </div>
+        <div class="sendForm"><button>Send message</button></div>
+      </form>
+    </div>
+  </div>
+</div>

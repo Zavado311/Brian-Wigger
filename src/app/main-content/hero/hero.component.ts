@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from '../shared/header/header.component';
+import { HeaderComponent } from '../../shared/header/header.component';
 
 @Component({
   selector: 'app-hero',
@@ -26,7 +26,7 @@ export class HeroComponent implements OnInit {
   }
 
   startScrollDownAnimation() {
-    let i:number = 0;
+    let i: number = 0;
     setInterval(() => {
       this.showImage = this.scrollDownImages[i];
       if (i == this.scrollDownImages.length - 1) {

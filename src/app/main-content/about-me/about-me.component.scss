@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 1440px;
+  width: 1440px;
   margin: auto;
 }
 h2 {
@@ -58,7 +58,7 @@ h2 {
     transition: transform 125ms;
 
     &:hover {
-      cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
+      cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
       transform: scaleX(1.1);
       font-weight: 700;
     }

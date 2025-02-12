@@ -12,13 +12,14 @@
 
   .imageProject img {
     filter: grayscale(1);
-
     height: 393px;
-    cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
+    cursor: url("./../../../../assets/img/cursor/cursorPointer.svg") 0 0,
+      pointer;
 
     &:hover {
       filter: grayscale(0);
-      cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
+      cursor: url("./../../../../assets/img/cursor/cursorPointer.svg") 0 0,
+        pointer;
     }
   }
 
@@ -93,7 +94,7 @@
         font-size: 23px;
         transition: width 125ms;
         &:hover {
-          cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+          cursor: url("./../../../../assets/img/cursor/cursorPointer.svg") 0 0,
             pointer;
           width: 207px;
           font-weight: 700;
@@ -118,7 +119,7 @@
 
 .showColoredImage {
   filter: grayscale(0) !important;
-  cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
+  cursor: url("./../../../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
 }
 
 .imageProject:hover ~ .informations {

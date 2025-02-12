@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3562199946446423606" datatype="html">
+        <source>About me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2572911534572496939" datatype="html">
+        <source> I am a Front-end Developer with a background in administration and customer service, currently expanding my expertise to Fullstack Development. My passion lies in creating intuitive and functional user experiences while continuously improving my skills in modern web technologies. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4479695792680832736" datatype="html">
+        <source> With a strong problem-solving mindset and an eye for detail, I aim to bridge the gap between design and development, ensuring seamless digital experiences. My past experience in customer-focused roles helps me understand user needs and deliver impactful solutions. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.html</context>
+          <context context-type="linenumber">13,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4279109917308080707" datatype="html">
+        <source> I am currently looking for a remote Frontend Developer position where I can contribute my skills and grow further as a developer. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2485659452320849585" datatype="html">
+        <source>Based in Switzerland</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1556965232044114879" datatype="html">
+        <source>Open to remote work</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8580235006809422132" datatype="html">
+        <source> If you&apos;re looking for a motivated developer to bring your ideas to life, feel free to reach out! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="672367463362674274" datatype="html">
+        <source>Contact Me!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1737753151350322492" datatype="html">
+        <source><x id="PH" equiv-text="this.title"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-content/about-me/about-me.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

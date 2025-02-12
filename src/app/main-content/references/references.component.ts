@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ReferenceBoxComponent } from './reference-box/reference-box.component';
 import { CommonModule } from '@angular/common';
+import { ReferenceBoxComponent } from './reference-box/reference-box.component';
 
 @Component({
   selector: 'app-references',

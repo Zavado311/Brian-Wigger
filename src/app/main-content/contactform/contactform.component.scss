@@ -1,5 +1,5 @@
 .backgroundImage {
-  background-image: url(./../../assets/img/backgroundImageContactform.svg);
+  background-image: url(./../../../assets/img/backgroundImageContactform.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -44,6 +44,20 @@
       width: 617px;
       justify-content: center;
       padding-top: 80px;
+      .completeField {
+        margin-top: -35px;
+        color: #e61c40;
+        font-family: "Overpass";
+        font-weight: 400;
+        font-size: 16px;
+      }
+      .completeTextarea {
+        color: #e61c40;
+        font-family: "Overpass";
+        font-weight: 400;
+        font-size: 16px;
+      }
+
       .entryarea {
         position: relative;
         height: 80px;
@@ -106,7 +120,7 @@
           transition: transform 125ms;
 
           &:hover {
-            cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0,
+            cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
               pointer;
             transform: scaleX(1.1);
             font-weight: 700;

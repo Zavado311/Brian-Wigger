@@ -15,7 +15,9 @@ import {
   styleUrl: './right-arrow.component.scss',
 })
 export class RightArrowComponent implements AfterViewInit {
-  showImageArrow: string = '';
+  showImageArrow: string = 'arrows/arrowFromRight1.svg';
+  playedAnimation: boolean = false;
+  private arrowAnimationIntervalId: any;
 
   scrollDownImages: string[] = [
     'arrows/arrowFromRight1.svg',
@@ -23,7 +25,7 @@ export class RightArrowComponent implements AfterViewInit {
     'arrows/arrowFromRight3.svg',
   ];
 
-  @ViewChild('yourElement') yourElement!: ElementRef;
+  @ViewChild('targetImage') yourElement!: ElementRef;
 
   ngAfterViewInit() {
     const threshold = 0.2; // how much % of the element is in view
@@ -32,7 +34,7 @@ export class RightArrowComponent implements AfterViewInit {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             this.startScrollDownAnimation();
-       
+
             observer.disconnect(); // disconnect if you want to stop observing else it will rerun every time its back in view. Just make sure you disconnect in ngOnDestroy instead
           }
         });
@@ -42,18 +44,18 @@ export class RightArrowComponent implements AfterViewInit {
     observer.observe(this.yourElement.nativeElement);
   }
 
-  ngOnInit(): void {}
-
   startScrollDownAnimation() {
     let i: number = 0;
-    setInterval(() => {
-      this.showImageArrow = this.scrollDownImages[i];
-      if (i == this.scrollDownImages.length - 1) {
-        i = 0;
-        
-      } else {
-        i++;
-      }
-    }, 1000);
+    if (!this.playedAnimation) {
+      this.arrowAnimationIntervalId = setInterval(() => {
+        this.showImageArrow = this.scrollDownImages[i];
+        if (i == this.scrollDownImages.length - 1) {
+          i = 0;
+          clearInterval(this.arrowAnimationIntervalId);
+        } else if (!this.playedAnimation) {
+          i++;
+        }
+      }, 500);
+    }
   }
 }

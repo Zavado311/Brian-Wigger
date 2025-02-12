@@ -42,7 +42,7 @@
           color: black;
           text-decoration: none;
           &:hover {
-            cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0,
+            cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
               pointer;
           }
         }
@@ -89,7 +89,7 @@
   }
 
   .sayHiBackground {
-    background-image: url("./../../assets/img/backgroundImageMenu.svg");
+    background-image: url("./../../../assets/img/backgroundImageMenu.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -135,7 +135,7 @@
           a {
             color: #fffcf3;
             text-decoration: none;
-            cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0,
+            cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
               pointer;
           }
         }
@@ -149,10 +149,10 @@
           display: flex;
           justify-content: center;
           flex-direction: row;
-          gap: 32px;
+          gap: 42px;
           list-style-type: none;
           li img:hover {
-            cursor: url("./../../assets/img/cursor/cursorPointer.svg") 0 0,
+            cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
               pointer;
           }
         }

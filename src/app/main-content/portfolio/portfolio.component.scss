@@ -14,9 +14,8 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    padding: 64px 0 48px 0;
+    margin: 64px auto 48px auto;
     width: fit-content;
-    margin: 0 auto;
     &:hover {
       color: #00bc8f;
     }

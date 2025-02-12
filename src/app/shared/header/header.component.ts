@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuHamburgerComponent } from '../../menu-hamburger/menu-hamburger.component';
+import { MenuHamburgerComponent } from '../../main-content/menu-hamburger/menu-hamburger.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
