@@ -1,15 +1,23 @@
 import { Component } from '@angular/core';
 import { MenuHamburgerComponent } from '../../main-content/menu-hamburger/menu-hamburger.component';
 import { CommonModule } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MenuHamburgerComponent, CommonModule],
+  imports: [MenuHamburgerComponent, CommonModule, RouterLink, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  constructor(private translate: TranslateService) {}
+
+  switchLanguage(lang: string): void {
+    this.translate.use(lang);
+  }
+
   private openMenuIntervalId: any;
   private closeMenuIntervalId: any;
 

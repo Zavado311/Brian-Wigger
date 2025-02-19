@@ -21,13 +21,51 @@
         vertical-align: middle;
         align-items: center;
         font-size: 22px;
-      }
 
-      .socialMedia ul {
+      }
+      .directions {
         display: flex;
-        gap: 42px;
-        flex-direction: row;
-        list-style-type: none;
+        justify-content: center;
+        flex-direction: column;
+
+        .toTheTop {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 64px;
+          .arrowLink {
+          width: 50px;
+          height: 80px;
+          display: flex;
+          background: url('./../../../assets/img/toTheTop/arrowLittle.svg');
+          background-repeat:no-repeat;
+          background-size: cover;
+          background-position: center;
+          cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+          pointer;
+          &:hover {
+            background: url('./../../../assets/img/toTheTop/arrowBig.svg');
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+        }
+        
+        .socialMedia ul {
+          display: flex;
+          gap: 42px;
+          flex-direction: row;
+          list-style-type: none;
+
+          img {
+            transition: margin 75ms ease-in-out;
+            &:hover {
+              margin-top: -4px;
+              cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+                pointer;
+            }
+          }
+        }
       }
     }
     .legalNotice {

@@ -1,54 +1,78 @@
 <div class="backgroundImage">
   <div class="overContactform">
-    <h2>Say Hi!</h2>
+    <h2>{{ "CONTACT.TITLE" | translate }}</h2>
 
     <div class="centerIt">
-      <h3>Want to discuss a new proyect?</h3>
-      <p>Say hello! Let's discuss your ideas and make it happen</p>
+      <h3>{{ "CONTACT.SUBTITLE" | translate }}</h3>
+      <p>{{ "CONTACT.DESCRIPTION" | translate }}</p>
 
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="entryarea">
           <input
-          #name="ngModel"
+            #name="ngModel"
             [(ngModel)]="contactData.name"
             type="text"
             name="name"
             required
           />
-          <div class="labelline">Your name</div>
+          <div class="labelline">{{ "CONTACT.NAME" | translate }}</div>
+          @if(name.valid) {
+          <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          }
+          @if(!name.valid && name.touched && !name.disabled) {
+            <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
+            }
         </div>
         @if(!name.valid && name.touched && !name.disabled) {
-          <span class="completeField">Your name is empty</span>
+        <span class="completeField">{{
+          "CONTACT.ERROR.NAME" | translate
+        }}</span>
         }
         <div class="entryarea">
           <input
+          class="emailInput"
             #email="ngModel"
             [(ngModel)]="contactData.email"
             type="text"
             name="email"
             required
+            [ngClass]="{'input-filled': email && contactData.email.length >= 1}"
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           />
-          <div class="labelline">Your email</div>
+          <div class="labelline" [ngClass]="{'labelline-filled': contactData.email.length >= 1}">{{ "CONTACT.EMAIL" | translate }}</div>
+          @if(email.valid && email.touched && !email.disabled) {
+          <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          }
+          @if(!email.valid && email.touched && !email.disabled) {
+            <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
+            }
         </div>
         @if(!email.valid && email.touched && !email.disabled) {
-        <span class="completeField">Your email is empty</span>
+        <span class="completeField">{{
+          "CONTACT.ERROR.EMAIL" | translate
+        }}</span>
         }
         <div class="entryarea setHeight">
           <textarea
             #message="ngModel"
             [(ngModel)]="contactData.message"
             class="setHeight"
-            name=""
-            id=""
             name="message"
             minlength="4"
             required
           ></textarea>
-          <div class="labelline">Your message</div>
+          <div class="labelline">{{ "CONTACT.MESSAGE" | translate }}</div>
+          @if(message.valid) {
+          <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          }
+          @if(!message.valid && message.touched && !message.disabled) {
+            <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
+            }
         </div>
         @if(!message.valid && message.touched && !message.disabled) {
-        <span class="completeTextarea">Your message is empty</span>
+        <span class="completeTextarea">{{
+          "CONTACT.ERROR.MESSAGE" | translate
+        }}</span>
         }
         <div class="privacyPolicy">
           <div class="overCheckboxPrivacyPolicy">
@@ -60,15 +84,20 @@
               required
             />
             <div class="imageCheckbox" (click)="setCheckbox()">
-              <img [src]="ImageOfCheckbox" alt="Image of checkbox" />
+              <img
+                [src]="ImageOfCheckbox"
+                alt="{{ 'CONTACT.CHECKBOX_ALT' | translate }}"
+              />
             </div>
           </div>
-          <div class="informationPrivacyPolicy">
-            I've read the <span>privacy policy</span>and agree to the processing
-            of my data as outlined.
-          </div>
+          <div
+            class="informationPrivacyPolicy"
+            [innerHTML]="'CONTACT.PRIVACY' | translate"
+          ></div>
         </div>
-        <div class="sendForm"><button>Send message</button></div>
+        <div class="sendForm">
+          <button>{{ "CONTACT.BUTTON" | translate }}</button>
+        </div>
       </form>
     </div>
   </div>

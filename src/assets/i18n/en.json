@@ -1,0 +1,98 @@
+{
+    "ABOUT_ME": {
+        "TITLE": "About me",
+        "INTRO": "I am a Front-end Developer with a background in administration and customer service, currently expanding my expertise to Fullstack Development. My passion lies in creating intuitive and functional user experiences while continuously improving my skills in modern web technologies.",
+        "SKILLS": "With a strong problem-solving mindset and an eye for detail, I aim to bridge the gap between design and development, ensuring seamless digital experiences. My past experience in customer-focused roles helps me understand user needs and deliver impactful solutions.",
+        "JOB_SEARCH": "I am currently looking for a remote Frontend Developer position where I can contribute my skills and grow further as a developer.",
+        "LOCATION": "Based in Switzerland",
+        "REMOTE_WORK": "Open to remote work",
+        "CONTACT_MESSAGE": "If you're looking for a motivated developer to bring your ideas to life, feel free to reach out!",
+        "CONTACT_BUTTON": "Contact Me!",
+        "IMAGE_ALT": "Picture of Brian Wigger"
+    },
+    "HERO": {
+        "TITLE": "Frontend <br /> Developer",
+        "NAME": "Brian Wigger",
+        "EMAIL": "brian.wigger@bluewin.ch",
+        "SCROLL_DOWN": "Scroll <br> Down",
+        "IMAGE_ALT": "Arrow pointing down"
+    },
+    "CONTACT": {
+        "TITLE": "Say Hi!",
+        "SUBTITLE": "Want to discuss a new project?",
+        "DESCRIPTION": "Say hello! Let's discuss your ideas and make them happen.",
+        "NAME": "Your name",
+        "EMAIL": "Your email",
+        "MESSAGE": "Your message",
+        "ERROR": {
+            "NAME": "Your name is empty",
+            "EMAIL": "Your email is empty",
+            "MESSAGE": "Your message is empty"
+        },
+        "PRIVACY": "I've read the <span>privacy policy</span> and agree to the processing of my data as outlined.",
+        "CHECKBOX_ALT": "Image of checkbox",
+        "BUTTON": "Send message"
+    },
+    "MENU": {
+        "ABOUT": "About me",
+        "SKILLS": "My skills",
+        "PORTFOLIO": "Portfolio",
+        "CONTACT": "Get in touch"
+    },
+    "CONTACT_SECTION": {
+        "TITLE": "Say Hi!",
+        "EMAIL_LABEL": "My email",
+        "EMAIL": "brian.wigger@bluewin.ch"
+    },
+    "SOCIAL_MEDIA": {
+        "GITHUB": "My GitHub profile",
+        "EMAIL": "Send me an email",
+        "LINKEDIN": "My LinkedIn profile"
+    },
+    "FOOTER": {
+        "GITHUB": "Visit my GitHub",
+        "EMAIL": "Send me an email",
+        "LINKEDIN": "Connect with me on LinkedIn",
+        "LEGAL_NOTICE": "Legal Notice"
+    },
+    "MY_SKILLS": {
+        "TITLE": "My Skills",
+        "NO_ITEMS": "There are no items.",
+        "CONTINUED_LEARNING": "Don’t see the skill you need?",
+        "CONTACT_ME": "Contact me!",
+        "MOTIVATION_TO_LEARN": "I’m always ready to learn!"
+    },
+    "PORTFOLIO": {
+        "TITLE": "Portfolio",
+        "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    },
+   "PROJECTS": {
+        "JOIN": {
+            "TITLE": "Join",
+            "USED_PROGRAMS": "JavaScript | HTML | CSS | Firebase",
+            "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+        },
+        "EL_POLLO_LOCO": {
+            "TITLE": "El Pollo Loco",
+            "USED_PROGRAMS": "JavaScript | HTML | CSS",
+            "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe find coins and tabasco salsa to fight against the crazy hen."
+        },
+        "POKEDEX": {
+            "TITLE": "Pokedex",
+            "USED_PROGRAMS": "JavaScript | HTML | CSS | API",
+            "DESCRIPTION": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
+        }
+    },
+    "REFERENCES": {
+        "TITLE": "References",
+        "DESCRIPTION": "I thrive both independently and as part of a team. Here's what my colleagues have to say about working with me.",
+        "FEEDBACKS": {
+            "REFERENCE_1": "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+            "REFERENCE_2": "Michael was an excellent collaborator. His structured approach and innovative thinking significantly improved our team's efficiency.",
+            "REFERENCE_3": "Working with Michael was an absolute pleasure. His ability to solve problems quickly and effectively was invaluable to the team."
+        }
+    },
+    "LEGAL_NOTICE": {
+        "HEADLINE": "Legal Notice"
+    }
+}

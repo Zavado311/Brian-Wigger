@@ -1,26 +1,26 @@
 <div class="overMySkills">
   <div class="titleMySkills">
     <div class="behindTitle"></div>
-    <div class="textTitle">My Skills</div>
+    <div class="textTitle">{{ 'MY_SKILLS.TITLE' | translate }}</div>
   </div>
 
   <div class="content">
     @for (item of mySkills; track mySkills.name) {
     <div class="skillItem">
       <div class="imgOfSkill">
-        <img src="./../../assets/img/skills/{{ item.path }} " alt="" />
+        <img src="./../../assets/img/skills/{{ item.path }}" alt="{{ item.name }}" />
       </div>
       <div class="nameOfSkill">{{ item.name }}</div>
     </div>
     } @empty {
-    <li>There are no items.</li>
+    <li>{{ 'MY_SKILLS.NO_ITEMS' | translate }}</li>
     }
     <div class="overContinuedLearning">
       <img src="./../../assets/img/skills/continuedlearning.svg" alt="" />
       <div class="continuedLearning">
-        Don’t see the skill you need? <span>Contact me</span>I’m always ready to
-        learn!
+        {{ 'MY_SKILLS.CONTINUED_LEARNING' | translate }} <span>{{ 'MY_SKILLS.CONTACT_ME' | translate }}</span> {{'MY_SKILLS.MOTIVATION_TO_LEARN' | translate}}
       </div>
     </div>
   </div>
 </div>
+

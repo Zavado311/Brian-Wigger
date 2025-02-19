@@ -1,0 +1,50 @@
+<svg
+  width="100"
+  height="40"
+  viewBox="0 0 100 40"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="BW Logo"
+>
+  <!-- Linke Klammer -->
+  <text
+    x="10"
+    y="28"
+    style="font-family: Arial Black; font-size: 30px;"
+    fill="#000"
+  >
+    [
+  </text>
+
+  <!-- B mit Skew-Effekt -->
+  <text
+    x="30"
+    y="28"
+    transform="skewX(-10)"
+    style="font-family: Arial Black; font-size: 30px;"
+    fill="#000"
+  >
+    B
+  </text>
+
+  <!-- W mit Skew-Effekt -->
+  <text
+    x="50"
+    y="28"
+    transform="skewX(-10)"
+    style="font-family: Arial Black; font-size: 30px;"
+    fill="#000"
+  >
+    W
+  </text>
+
+  <!-- Rechte Klammer -->
+  <text
+    x="82"
+    y="28"
+    style="font-family: Arial Black; font-size: 30px;"
+    fill="#000"
+  >
+    ]
+  </text>
+</svg>

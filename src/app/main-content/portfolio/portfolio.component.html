@@ -1,9 +1,6 @@
 <div class="overPortfolio">
-  <h2>Portfolio</h2>
-  <p>
-    Explore a selection of my work here - Interact with projects to see my
-    skills in action.
-  </p>
+  <h2>{{ 'PORTFOLIO.TITLE' | translate }}</h2>
+  <p>{{ 'PORTFOLIO.DESCRIPTION' | translate }}</p>
 
   <app-projects
     *ngFor="let project of projects; let i = index"

@@ -6,11 +6,12 @@ import {
   AfterViewInit,
   ElementRef,
 } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-left-arrow',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './left-arrow.component.html',
   styleUrl: './left-arrow.component.scss',
 })

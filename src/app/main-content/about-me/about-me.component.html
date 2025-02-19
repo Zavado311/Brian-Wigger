@@ -1,40 +1,31 @@
 <div class="overallAboutMe">
   <section class="aboutMe">
-    <h2 i18n>About me</h2>
+    <h2>{{ "ABOUT_ME.TITLE" | translate }}</h2>
     <article>
-      <p i18n>
-        I am a Front-end Developer with a background in administration and
-        customer service, currently expanding my expertise to Fullstack
-        Development. My passion lies in creating intuitive and functional user
-        experiences while continuously improving my skills in modern web
-        technologies.
+      <p>
+        {{ "ABOUT_ME.INTRO" | translate }}
       </p>
-      <p i18n>
-        With a strong problem-solving mindset and an eye for detail, I aim to
-        bridge the gap between design and development, ensuring seamless digital
-        experiences. My past experience in customer-focused roles helps me
-        understand user needs and deliver impactful solutions.
+      <p>
+        {{ "ABOUT_ME.SKILLS" | translate }}
       </p>
-      <p i18n>
-        I am currently looking for a remote Frontend Developer position where I
-        can contribute my skills and grow further as a developer.
+      <p>
+        {{ "ABOUT_ME.JOB_SEARCH" | translate }}
       </p>
     </article>
     <article>
       <ul>
-        <li>📍 <strong i18n>Based in Switzerland</strong></li>
-        <li>🌍 <strong i18n>Open to remote work</strong></li>
+        <li>📍 <strong>{{ "ABOUT_ME.LOCATION" | translate }}</strong></li>
+        <li>🌍 <strong>{{ "ABOUT_ME.REMOTE_WORK" | translate }}</strong></li>
       </ul>
-      <p i18n>
-        If you're looking for a motivated developer to bring your ideas to life,
-        feel free to reach out!
+      <p>
+        {{ "ABOUT_ME.CONTACT_MESSAGE" | translate }}
       </p>
     </article>
 
-    <button i18n>Contact Me!</button>
+    <button>{{ "ABOUT_ME.CONTACT_BUTTON" | translate }}</button>
   </section>
   <section class="showPicture">
-    <img src="./../../assets/img/Brian Wigger/BrianWigger.JPG" alt="Brian Wigger" />
+    <img src="./../../assets/img/Brian Wigger/BrianWigger.JPG" alt="{{ 'ABOUT_ME.IMAGE_ALT' | translate }}" />
     <div class="border"></div>
   </section>
 </div>

@@ -1,6 +1,8 @@
 .overall {
   display: flex;
   justify-content: center;
+  width: 100vw;
+  background-color: #fffcf3;
 
   nav {
     z-index: 9999;
@@ -10,13 +12,48 @@
     display: flex;
     justify-content: center;
     margin: auto;
-
     .navOptions {
       width: 1440px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
+      a {
+        height: 100%;
+        display: flex;
+        img {
+          cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+            pointer;
+        }
+      }
+
+      .headerOptions {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+
+        button {
+          font-size: 24px;
+          border: unset;
+          background-color: unset;
+
+          &:hover {
+            color: #00bc8f;
+            cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+              pointer;
+          }
+        }
+
+        .language {
+          display: flex;
+          justify-content: center;
+          vertical-align: middle;
+          text-align: center;
+          align-items: center;
+          gap: 4px;
+        }
+      }
     }
   }
 
@@ -34,6 +71,7 @@
     top: 0;
     transform: translateY(-100vh);
     transition: all 225ms ease-in-out;
+    
   }
   .show-overlay-menu {
     transform: translateY(0);

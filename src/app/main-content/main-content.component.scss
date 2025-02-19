@@ -1,0 +1,19 @@
+* {
+    scroll-behavior: smooth;
+}
+
+app-header {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  position: sticky;
+  z-index: 9999;
+}
+
+app-hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1440px;
+  margin: -90px auto 0 auto;
+}

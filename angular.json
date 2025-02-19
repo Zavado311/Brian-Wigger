@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "i18n-portfolio": {
+    "Portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -13,12 +13,6 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      "i18n": {
-        "sourceLocale": "en-US",
-        "locales": {
-          "de-CH": "messages.de.xlf"
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -54,18 +48,12 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all",
-              "localize": [
-                "de-CH"
-              ]
+              "outputHashing": "all"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "localize": [
-                "de-CH"
-              ]
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -74,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "i18n-portfolio:build:production"
+              "buildTarget": "Portfolio:build:production"
             },
             "development": {
-              "buildTarget": "i18n-portfolio:build:development"
+              "buildTarget": "Portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "i18n-portfolio:build"
+            "buildTarget": "Portfolio:build"
           }
         },
         "test": {

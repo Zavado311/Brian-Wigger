@@ -12,7 +12,7 @@
       [ngClass]="{'reversedImageProject' : reversed, 'showColoredImage' : mouseOnProject}"
       (mouseenter)="showInformations()"
     >
-      <img [ngClass]="mouseOnProject ? 'showColoredImage' : ''" src="./../../../assets/img/projects/{{ project.photo }}" alt="" />
+      <img [ngClass]="mouseOnProject ? 'showColoredImage' : ''" src="./../../../assets/img/projects/{{ project.photo }}" alt="{{ project.photo }}" />
       <div
         class="showBorder"
         [ngClass]="{ 'reversedShowBorder': reversed, 'showIt ': mouseOnProject }"
@@ -21,7 +21,7 @@
         <img
           class="showLinkArrowImg" [ngClass]="mouseOnProject ? 'showIt  showAnimationArrow' : ''"
           src="./../../../assets/img/LinkArrow.svg"
-          alt=""
+          alt="Arrow"
         />
       </div>
     </div>

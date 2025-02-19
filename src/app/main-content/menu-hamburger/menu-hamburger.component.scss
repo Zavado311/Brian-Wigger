@@ -36,9 +36,9 @@
         justify-content: center;
         align-items: center;
         height: 167px;
-        width: 600px;
-
         a {
+          padding: 0 12px;
+          margin: 0;
           color: black;
           text-decoration: none;
           &:hover {
@@ -51,22 +51,21 @@
       .hoverLink {
         position: relative;
       }
-      /* Linke vertikale Linie (startet in der Mitte) */
       .hoverLink::before {
         content: "";
         position: absolute;
         left: 0;
-        top: 50%; /* Startet in der Mitte des Elements */
-        width: 4px; /* Dicke der Linie */
-        height: 50%; /* Linie geht von der Mitte bis nach unten */
+        top: 50%;
+        width: 4px;
+        height: 50%;
         background-color: black;
         transform-origin: bottom;
-        transition: none; /* Kein animiertes Zurückkehren */
+        transition: none;
       }
 
       .hoverLink:hover::before {
-        transform: scaleY(0); /* Linie schrumpft nach unten */
-        transition: transform 0.2s ease-in-out; /* Animation nur beim Hovern */
+        transform: scaleY(0);
+        transition: transform 0.2s ease-in-out;
       }
 
       /* Untere horizontale Linie */
@@ -74,16 +73,16 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -3px; /* Abstand unterhalb des Textes */
-        width: 160px; /* Startbreite des Balkens */
-        height: 4px; /* Höhe des Balkens */
+        bottom: -3px;
+        width: 160px;
+        height: 4px;
         background-color: black;
-        transition: none; /* Kein animiertes Zurückkehren */
+        transition: none;
       }
 
       .hoverLink:hover::after {
-        transform: translateX(435px); /* Bewegt den Balken nach rechts */
-        transition: transform 0.2s ease-in-out 0.2s; /* Animation nur beim Hovern */
+        transform: translateX(435px);
+        transition: transform 0.2s ease-in-out 0.2s;
       }
     }
   }

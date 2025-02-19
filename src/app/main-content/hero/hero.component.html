@@ -1,22 +1,27 @@
 <div class="heroText">
-  <div class="heroTitle">
-    Frontend <br />
-    Developer
-  </div>
+  <div class="heroTitle" [innerHTML]="'HERO.TITLE' | translate"></div>
   <div class="heroDescription">
     <div class="overline">
       <div class="line"></div>
       <div class="spaceline"></div>
     </div>
-    <div class="heroName">Brian Wigger</div>
+    <div class="heroName">{{ "HERO.NAME" | translate }}</div>
   </div>
   <div class="heroDirections">
-    <div class="emailConnection"><a href="mailto:brian.wigger@bluewin.ch">brian.wigger&#64;bluewin.ch</a></div>
+    <div class="emailConnection">
+      <a href="mailto:brian.wigger@bluewin.ch">{{
+        "HERO.EMAIL" | translate
+      }}</a>
+    </div>
     <div class="scrollDown">
       <img
-        src="./../../assets/img/{{ showImage }}"
-        alt=""
-      /><div class="scrollDownText"><div>Scroll <br> Down</div>
+        [src]="'./../../assets/img/' + showImage"
+        alt="{{ 'HERO.IMAGE_ALT' | translate }}"
+      />
+      <div
+        class="scrollDownText"
+        [innerHTML]="'HERO.SCROLL_DOWN' | translate"
+      ></div>
     </div>
   </div>
 </div>
