@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostListener, OnInit } from '@angular/core';
 import { PortfolioComponent } from '../portfolio.component';
 
 @Component({
@@ -9,9 +9,12 @@ import { PortfolioComponent } from '../portfolio.component';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
 mouseOnProject = false;
 
+ngOnInit(): void {
+  this.checkScreenSize();
+}
 
   @Input() project!: {
     photo: string;
@@ -26,6 +29,18 @@ mouseOnProject = false;
   @Input() projects: any[] = [];
   @Input() length!: number; 
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.checkScreenSize();
+  }
+
+  checkScreenSize(): void {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 1440) {
+      this.showInformations();
+    }
+  }
 
 showInformations() {
   this.mouseOnProject = true;

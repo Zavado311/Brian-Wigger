@@ -76,4 +76,8 @@ export class HeaderComponent {
       }, 30);
     }
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

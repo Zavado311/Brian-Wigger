@@ -1,7 +1,7 @@
 .overall {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   background-color: #fffcf3;
 
   nav {
@@ -71,9 +71,16 @@
     top: 0;
     transform: translateY(-100vh);
     transition: all 225ms ease-in-out;
-    
   }
   .show-overlay-menu {
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navOptions {
+    display: flex;
+    justify-content: center;
+    margin: 0 25px;
   }
 }

@@ -1,9 +1,19 @@
 <div class="overall">
   <nav>
     <div class="navOptions">
-      <div class="logo"><a [routerLink]="['']" href="#hero"><img  src="./../../../assets/img/logo/logoBW.svg" alt=""></a></div>
+      <div class="logo">
+        <a (click)="scrollToTop()" [routerLink]="['']"
+          ><img src="./../../../assets/img/logo/logoBW.svg" alt=""
+        /></a>
+      </div>
       <div class="headerOptions">
-        <div class="language"><button (click)="switchLanguage('de')">DE</button>|<button (click)="switchLanguage('en')">EN</button></div>
+        <div class="language">
+          <button (click)="switchLanguage('de')">DE</button>|<button
+            (click)="switchLanguage('en')"
+          >
+            EN
+          </button>
+        </div>
         <div class="hamburger">
           <img
             (click)="openMenu ? closeMenu() : showMenu()"
@@ -15,6 +25,7 @@
     </div>
   </nav>
   <app-menu-hamburger
+    (callParentFunction)="closeMenu()"
     [ngClass]="{ 'show-overlay-menu': openMenu }"
   ></app-menu-hamburger>
 </div>

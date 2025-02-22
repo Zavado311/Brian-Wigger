@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 .overContactform {
@@ -130,7 +131,7 @@
       .sendForm {
         display: flex;
         justify-content: center;
-        
+
         button {
           justify-content: center;
           align-items: center;
@@ -198,3 +199,10 @@
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .overContactform {
+   margin: 0 25px;
+   display: unset;
+  }
+ }

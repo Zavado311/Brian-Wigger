@@ -167,3 +167,50 @@
     transform: rotate(20deg);
   }
 }
+/*
+@media screen and (max-width: 1440px) {
+  .overProject {
+    width: unset;
+    margin: 0 25px 375px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .aboutProject {
+      margin: 0 25px;
+      width: unset;
+    }
+    .number {
+      top: 0;
+    }
+  }
+
+  .aboutProject {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informations {
+    margin: 0 25px;
+  }
+
+  .showTheInformation {
+    left: 0 !important;
+    top: 400px;
+  }
+
+  .reversedInformation {
+    left: 0 !important;
+    top: 400px;
+  }
+
+  .informations {
+    left: 0 !important;
+    right: 0;
+    top: 400px;
+  }
+
+  .reversedClass {
+    top: 500px !important;
+  }
+}
+*/

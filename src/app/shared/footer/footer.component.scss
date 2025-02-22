@@ -16,12 +16,15 @@
       width: 100%;
       justify-content: space-between;
 
+      .informationAboutMe {
+        align-self: flex-end;
+      }
+
       .copyright {
         display: flex;
-        vertical-align: middle;
-        align-items: center;
+        vertical-align: end;
+        align-items: flex-end;
         font-size: 22px;
-
       }
       .directions {
         display: flex;
@@ -33,24 +36,24 @@
           justify-content: center;
           margin-bottom: 64px;
           .arrowLink {
-          width: 50px;
-          height: 80px;
-          display: flex;
-          background: url('./../../../assets/img/toTheTop/arrowLittle.svg');
-          background-repeat:no-repeat;
-          background-size: cover;
-          background-position: center;
-          cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
-          pointer;
-          &:hover {
-            background: url('./../../../assets/img/toTheTop/arrowBig.svg');
-            background-repeat:no-repeat;
+            width: 50px;
+            height: 80px;
+            display: flex;
+            background: url("./../../../assets/img/toTheTop/arrowLittle.svg");
+            background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+            cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+              pointer;
+            &:hover {
+              background: url("./../../../assets/img/toTheTop/arrowBig.svg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+            }
           }
         }
-        }
-        
+
         .socialMedia ul {
           display: flex;
           gap: 42px;
@@ -84,5 +87,21 @@
       display: flex;
       position: relative;
     }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .blackBackground {
+    margin: unset;
+    margin-top: -1px;
+  }
+
+  .overFooter {
+    width: unset;
+    margin: 0 25px !important;
+  }
+
+  .section {
+    width: unset !important;
   }
 }

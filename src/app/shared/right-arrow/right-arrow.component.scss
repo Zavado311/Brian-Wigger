@@ -13,3 +13,14 @@
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .overallArrow {
+    .pictureArrow {
+      img {
+        height: 100%;
+        width: 100vw;
+      }
+    }
+  }
+}

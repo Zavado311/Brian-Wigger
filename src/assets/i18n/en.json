@@ -66,7 +66,7 @@
         "TITLE": "Portfolio",
         "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
     },
-   "PROJECTS": {
+    "PROJECTS": {
         "JOIN": {
             "TITLE": "Join",
             "USED_PROGRAMS": "JavaScript | HTML | CSS | Firebase",

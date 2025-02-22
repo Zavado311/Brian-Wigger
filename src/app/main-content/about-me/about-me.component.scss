@@ -98,3 +98,21 @@ h2 {
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .overallAboutMe {
+    flex-direction: column;
+    width: unset;
+  }
+  .aboutMe {
+    width: 720px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 25px;
+    align-self: center;
+  }
+  .showPicture {
+    align-self: center;
+  }
+}

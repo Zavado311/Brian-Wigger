@@ -23,7 +23,7 @@
       flex-direction: column;
       gap: 39px;
       font-family: "Syne";
-      font-size: 96px;
+      font-size: 64px;
       font-weight: 700;
       line-height: 96px;
       letter-spacing: -0.025em;
@@ -150,9 +150,16 @@
           flex-direction: row;
           gap: 42px;
           list-style-type: none;
-          li img:hover {
-            cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
-              pointer;
+          li {
+            img {
+              transition: margin 75ms ease-in-out;
+              &:hover {
+                margin-top: -4px;
+                cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0
+                    0,
+                  pointer;
+              }
+            }
           }
         }
       }

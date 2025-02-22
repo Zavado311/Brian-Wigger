@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .heroText {
   display: flex;
   justify-content: center;
@@ -38,7 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 0 0 32px;
   font-family: Overpass;
   font-size: 48px;
   font-weight: 700;
@@ -87,5 +91,22 @@
   img {
     height: 180px;
     width: 116px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .heroText {
+    margin: 0 25px;
+    .heroTitle {
+      font-size: 96px;
+      line-height: 96px;
+    }
+
+    .heroDirections {
+      display: flex;
+      justify-content: center;
+      gap: 50vw;
+      margin: 0 25px;
+    }
   }
 }

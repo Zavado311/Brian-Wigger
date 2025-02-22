@@ -82,3 +82,30 @@
     height: 75px;
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .titleMySkills {
+    text-align: center;
+    top: -34px !important;
+    .textTitle {
+      font-size: 48px;
+    }
+    .behindTitle {
+      top: 27px;
+    }
+  }
+
+  .content {
+    width: unset;
+    column-gap: 64px;
+    margin: 0 20px;
+  }
+
+  .overMySkills {
+    margin: 0 25px;
+
+    .continuedLearning {
+      flex-direction: column;
+    }
+  }
+}
