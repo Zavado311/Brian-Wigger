@@ -11,8 +11,7 @@
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  width: 1440px;
-
+  width: 1500px;
   color: #fffcf3;
 
   h2 {
@@ -100,7 +99,6 @@
             transform: translate(-15px, -16px) scale(0.88);
             z-index: 1111;
           }
-
         }
 
         .labelline {
@@ -126,12 +124,15 @@
           right: 10px;
           top: 13px;
         }
-
       }
       .sendForm {
         display: flex;
         justify-content: center;
 
+        .disabledButton {
+          pointer-events: none !important;
+          opacity: 0.5 !important;
+        }
         button {
           justify-content: center;
           align-items: center;
@@ -172,6 +173,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+
+    .informationPrivacyPolicy {
+      .linkPrivacyPolicy {
+        color: #00bc8f;
+      }
+    }
 
     .overCheckboxPrivacyPolicy {
       position: static;
@@ -191,6 +199,10 @@
         width: 18px;
         display: flex;
         justify-content: center;
+        img {
+          cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+            pointer;
+        }
       }
 
       .checkboxPrivacyPolicy {
@@ -200,9 +212,8 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   .overContactform {
-   margin: 0 25px;
-   display: unset;
+    display: unset;
   }
- }
+}

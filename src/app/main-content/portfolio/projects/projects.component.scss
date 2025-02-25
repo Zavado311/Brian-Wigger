@@ -1,8 +1,8 @@
 .overProject {
   position: relative;
-  width: 1440px;
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
 
   .number {
     font-size: 48px;
@@ -29,7 +29,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 1440px;
     height: 460px;
     .imageProject {
       position: relative;
@@ -73,7 +72,7 @@
       flex-direction: column;
       vertical-align: middle;
       justify-content: center;
-      width: 620px;
+      width: 550px;
       height: 393px;
       gap: 4px;
       position: absolute;
@@ -140,7 +139,7 @@
 }
 
 .reversedInformation {
-  left: 820px !important;
+  left: 900px !important;
 }
 
 .reversedClass {
@@ -168,7 +167,7 @@
   }
 }
 /*
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   .overProject {
     width: unset;
     margin: 0 25px 375px 0;

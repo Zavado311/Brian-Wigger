@@ -13,7 +13,7 @@
     justify-content: center;
     margin: auto;
     .navOptions {
-      width: 1440px;
+      width: 1500px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -77,7 +77,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   .navOptions {
     display: flex;
     justify-content: center;

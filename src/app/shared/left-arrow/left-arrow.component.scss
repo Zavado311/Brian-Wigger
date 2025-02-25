@@ -1,26 +1,29 @@
 .overallArrow {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  width: 1500px;
+  margin: auto;
+
+  .pictureArrow {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 60px 0;
-    max-width: 1440px;
-    margin: auto;
+    justify-content: flex-start;
+
+    img {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .overallArrow {
+    width: unset;
     .pictureArrow {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
       img {
-        height: 300px;
+        height: unset;
+        width: 100%;
       }
     }
   }
-  
-  @media screen and (max-width: 1440px) {
-   .overallArrow {
-    .pictureArrow {
-      img {
-        height: 100%;
-        width: 100vw;
-      }
-    }
-   }
-   }
+}

@@ -29,7 +29,7 @@
             "EMAIL": "Deine E-Mail darf nicht leer sein",
             "MESSAGE": "Deine Nachricht darf nicht leer sein"
         },
-        "PRIVACY": "Ich habe die <span>Datenschutzerklärung</span> gelesen und stimme der Verarbeitung meiner Daten gemäß den Richtlinien zu.",
+        "PRIVACY": "Ich habe die <span class=\"linkPrivacyPolicy\">Datenschutzerklärung</span> gelesen und stimme der Verarbeitung meiner Daten gemäß den Richtlinien zu.",
         "CHECKBOX_ALT": "Bild der Checkbox",
         "BUTTON": "Nachricht senden"
     },
@@ -56,7 +56,7 @@
         "LINKEDIN": "Mein LinkedIn-Profil"
     },
     "MY_SKILLS": {
-        "TITLE": "Meine Fähigkeiten",
+        "TITLE": "Meine Skills",
         "NO_ITEMS": "Es gibt keine Einträge.",
         "CONTINUED_LEARNING": "Fehlt dir eine bestimmte Fähigkeit?",
         "CONTACT_ME": "Kontaktiere mich!",

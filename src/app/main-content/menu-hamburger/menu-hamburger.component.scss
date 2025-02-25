@@ -7,12 +7,12 @@
   background-color: #fffcf3;
   z-index: 9999;
   margin: 0 auto;
+  overflow-x: hidden;
 
   .centerAll {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 1440px;
 
     .options {
       display: flex;
@@ -109,7 +109,7 @@
       display: flex;
       justify-content: center;
       vertical-align: middle;
-      width: 1440px;
+      width: 1500px;
       margin: auto;
       justify-content: space-between;
       color: white;
@@ -162,6 +162,17 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .overall {
+    .sayHiBackground {
+      .texts {
+        width: unset;
+        margin: 0 25px;
       }
     }
   }

@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1440px;
-  margin: auto;
+  width: 1500px;
+  margin: 0 25px;
 }
 h2 {
   font-family: Syne;
@@ -99,7 +99,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   .overallAboutMe {
     flex-direction: column;
     width: unset;

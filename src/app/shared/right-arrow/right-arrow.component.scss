@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 60px 0;
-  max-width: 1440px;
+  width: 1500px;
   margin: auto;
   .pictureArrow {
     width: 100%;
@@ -14,12 +14,13 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   .overallArrow {
+    width: unset;
     .pictureArrow {
       img {
-        height: 100%;
-        width: 100vw;
+        height: unset;
+        width: 100%;
       }
     }
   }

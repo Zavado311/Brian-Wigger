@@ -37,7 +37,7 @@ ngOnInit(): void {
   checkScreenSize(): void {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth < 1440) {
+    if (screenWidth < 1500) {
       this.showInformations();
     }
   }

@@ -96,7 +96,8 @@
           ></div>
         </div>
         <div class="sendForm">
-          <button>{{ "CONTACT.BUTTON" | translate }}</button>
+          <button [ngClass]="{'disabledButton': !contactData.checkbox}"
+          [disabled]="!contactData.checkbox">{{ "CONTACT.BUTTON" | translate }}</button>
         </div>
       </form>
     </div>

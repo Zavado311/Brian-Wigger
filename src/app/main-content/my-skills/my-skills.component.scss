@@ -1,10 +1,10 @@
 .overMySkills {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 1500px;
   justify-content: center;
   border: 4px solid #000000;
-  margin: 0 auto;
+  margin: 0 100px;
 
   .titleMySkills {
     display: flex;
@@ -46,6 +46,7 @@
 
     .continuedLearning {
       display: flex;
+      flex-direction: column;
       font-size: 22px;
       align-items: center;
       span {
@@ -61,7 +62,7 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 40px 0 110px 0;
+  padding: 0 24px 110px 28px;
   width: 1012px;
   row-gap: 78px;
   column-gap: 128px;
@@ -83,7 +84,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   .titleMySkills {
     text-align: center;
     top: -34px !important;
@@ -102,8 +103,6 @@
   }
 
   .overMySkills {
-    margin: 0 25px;
-
     .continuedLearning {
       flex-direction: column;
     }

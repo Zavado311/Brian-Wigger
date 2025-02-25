@@ -29,7 +29,7 @@
             "EMAIL": "Your email is empty",
             "MESSAGE": "Your message is empty"
         },
-        "PRIVACY": "I've read the <span>privacy policy</span> and agree to the processing of my data as outlined.",
+        "PRIVACY": "I've read the <span class=\"linkPrivacyPolicy\">privacy policy</span> and agree to the processing of my data as outlined.",
         "CHECKBOX_ALT": "Image of checkbox",
         "BUTTON": "Send message"
     },
