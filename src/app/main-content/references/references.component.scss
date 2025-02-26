@@ -29,7 +29,7 @@
     padding-bottom: 40px;
   }
 
-  .setSizeFeedbacks {
+  .setFeedbacks {
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -46,5 +46,19 @@
 @media screen and (max-width: 1500px) {
   .overReferences {
     margin: 0 25px;
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .setFeedbacks {
+      display: flex;
+      flex-direction: column;
+      
+      app-reference-box {
+        max-width: unset;
+      }
+    }
   }
 }

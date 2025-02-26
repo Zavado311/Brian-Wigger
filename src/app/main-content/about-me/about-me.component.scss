@@ -105,14 +105,34 @@ h2 {
     width: unset;
   }
   .aboutMe {
-    width: 720px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 25px;
+    width: 100%;
     align-self: center;
   }
   .showPicture {
     align-self: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 36px;
+    margin: 24px auto 24px auto;
+  }
+  .aboutMe {
+    font-size: 20px;
+  }
+  article {
+    font-size: 20px;
+  }
+  section {
+    display: flex;
+    justify-self: center;
+    .showPicture {
+      height: auto;
+      width: 100%;
+    }
   }
 }

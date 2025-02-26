@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
 
   .number {
     font-size: 48px;
@@ -25,11 +24,10 @@
 
   .aboutProject {
     padding-top: 60px;
-    margin-bottom: 100px;
+    margin: 0 25px 100px 25px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 460px;
     .imageProject {
       position: relative;
       z-index: 2;
@@ -37,7 +35,7 @@
         display: none;
         background: transparent;
         border: #000000 solid 4px;
-        height: 393px;
+        height: 30vh;
         width: 620px;
         position: absolute;
         top: 20px;
@@ -53,7 +51,6 @@
         transform: rotate(120deg);
       }
     }
-
     .title {
       font-size: 45px;
       font-weight: 800;
@@ -73,7 +70,7 @@
       vertical-align: middle;
       justify-content: center;
       width: 550px;
-      height: 393px;
+      height: 30vh;
       gap: 4px;
       position: absolute;
       left: 0;
@@ -213,3 +210,45 @@
   }
 }
 */
+
+@media screen and (max-width: 1500px) {
+  .informations {
+    transition: top 125ms ease-in-out;
+    left: unset !important;
+  }
+
+  .imageProject ~ .informations {
+    left: unset !important;
+    top: 420px;
+  }
+
+  .reversedImageProject ~ .informations {
+    left: unset !important;
+    top: 420px;
+    right: 72px;
+    align-items: end;
+    text-align: end;
+  }
+
+  .overProject {
+    margin-bottom: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .overProject {
+    .imageProject {
+      .showBorder {
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      img {
+        height: 25vh;
+      }
+    }
+    .informations {
+      width: unset !important;
+    }
+  }
+}

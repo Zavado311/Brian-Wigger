@@ -1,10 +1,11 @@
 .overMySkills {
   display: flex;
   flex-direction: column;
-  max-width: 1500px;
   justify-content: center;
   border: 4px solid #000000;
-  margin: 0 100px;
+  width: 1440px;
+  margin: 0 25px;
+  padding: 0 32px;
 
   .titleMySkills {
     display: flex;
@@ -41,7 +42,7 @@
     flex-direction: row;
     vertical-align: middle;
     justify-content: center;
-    margin: auto;
+    padding: 78px 0;
     gap: 26px;
 
     .continuedLearning {
@@ -62,12 +63,10 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 24px 110px 28px;
-  width: 1012px;
-  row-gap: 78px;
-  column-gap: 128px;
+  padding: 0 24px;
+  row-gap: 48px;
+  column-gap: 127px;
   text-align: center;
-  margin: auto;
 }
 
 .skillItem {
@@ -78,9 +77,16 @@
   font-size: 16px;
   font-weight: 700;
   font-family: "Overpass";
-  flex: 1;
-  img {
-    height: 75px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+}
+
+.imgOfSkill {
+  height: 75px;
+  &:hover {
+    margin-top: -28px;
+    transition: margin-top 125ms ease-in-out;
   }
 }
 
@@ -100,6 +106,31 @@
     width: unset;
     column-gap: 64px;
     margin: 0 20px;
+  }
+
+  .overMySkills {
+    .continuedLearning {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .titleMySkills {
+    text-align: center;
+    top: -34px !important;
+    .textTitle {
+      font-size: 48px;
+    }
+    .behindTitle {
+      top: 27px;
+    }
+  }
+
+  .content {
+    width: unset;
+    column-gap: 32px;
+    margin: unset;
   }
 
   .overMySkills {

@@ -66,10 +66,9 @@
   font-weight: 300;
   color: #000;
   letter-spacing: -0.025em;
-  max-width: 100%; /* Für kleinere Bildschirme */
-  width: 100%; /* Damit es flexibel bleibt */
-  max-width: 1200px; /* Maximale Breite auf großen Bildschirmen */
-  margin: 0 auto; /* Zentriert die Box auf großen Bildschirmen */
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 25px;
 
   .emailConnection {
     transform: rotate(-90deg);

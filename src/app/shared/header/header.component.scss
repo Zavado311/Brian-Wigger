@@ -11,13 +11,14 @@
     height: 90px;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 0 25px;
     .navOptions {
       width: 1500px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      margin: 0 25px;
 
       a {
         height: 100%;
@@ -77,10 +78,8 @@
   }
 }
 
-@media screen and (max-width: 1500px) {
-  .navOptions {
-    display: flex;
-    justify-content: center;
-    margin: 0 25px;
-  }
+@media screen and (max-width: 800px) {
+ .aboutMe {
+  width: 100%;
+ }
 }
