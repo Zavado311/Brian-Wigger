@@ -1,6 +1,9 @@
 .overPortfolio {
-  max-width: 1500px;
-  margin: auto;
+  width: 1500px;
+  margin: 0 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   h2 {
     font-family: Syne;
@@ -22,10 +25,11 @@
   }
 
   p {
-    display: flex;
-    justify-content: center;
     padding-bottom: 40px;
     font-size: 22px;
+    width: 700px;
+    text-align: center;
+    align-self: center;
   }
 }
 
@@ -35,10 +39,40 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .overPortfolio {
     h2 {
-      font-size: 36px;
+      margin: 0;
+      font-size: 8vw;
+    }
+    p {
+      margin: 0 25px;
+      font-size: 22px;
+      width: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .overPortfolio {
+    h2 {
+    }
+    p {
+
+      font-size: 16px;
+
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .overPortfolio {
+    h2 {
+    }
+    p {
+
+      font-size: 16px;
+
     }
   }
 }

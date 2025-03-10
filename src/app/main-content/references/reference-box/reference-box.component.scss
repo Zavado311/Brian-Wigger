@@ -4,13 +4,8 @@
   align-self: center;
   text-align: center;
   gap: 24px;
-  border: 4px solid black;
   font-size: 18px;
-  min-height: 344px;
-
-  &:hover {
-    border: 4px solid #00bc8f;
-  }
+  padding-bottom: 36px;
 
   &:hover img {
     filter: invert(41%) sepia(95%) saturate(844%) hue-rotate(131deg)
@@ -21,10 +16,16 @@
     padding-top: 26px;
   }
 
-  .autor {
-  }
-
   .feedbacktext {
     padding: 0 6px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .overFeedback {
+    .feedbacktext {
+      font-size: 14px;
+    }
+  
   }
 }

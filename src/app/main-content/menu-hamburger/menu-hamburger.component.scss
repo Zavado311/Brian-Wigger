@@ -68,7 +68,6 @@
         transition: transform 0.2s ease-in-out;
       }
 
-      /* Untere horizontale Linie */
       .hoverLink::after {
         content: "";
         position: absolute;
@@ -81,7 +80,7 @@
       }
 
       .hoverLink:hover::after {
-        transform: translateX(435px);
+        transform: translateX(266px);
         transition: transform 0.2s ease-in-out 0.2s;
       }
     }
@@ -100,7 +99,6 @@
     display: flex;
     vertical-align: middle;
     flex-direction: row;
-
     .texts {
       position: absolute;
       bottom: 10%;
@@ -173,6 +171,59 @@
       .texts {
         width: unset;
         margin: 0 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .overall {
+    .centerAll {
+      .sayHiBackground {
+        .texts {
+          flex-direction: column;
+          .linksSocialMedia {
+            justify-content: flex-end;
+          }
+          .sayHiText {
+            margin-bottom: 55px;
+            .textSayHi {
+              font-size: 56px;
+            }
+          }
+        }
+      }
+      .options {
+        font-size: 56px;
+        li {
+          height: unset;
+        }
+        .hoverLink::after {
+        width: 106px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .overall {
+    .centerAll {
+      .sayHiBackground {
+        .texts {
+          .sayHiText {
+            margin-bottom: 25px;
+            .textSayHi {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+      .options {
+        font-size: 32px;
+        li {
+          height: unset;
+        }
       }
     }
   }

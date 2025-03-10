@@ -24,10 +24,11 @@
 
   .aboutProject {
     padding-top: 60px;
-    margin: 0 25px 100px 25px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    height: 460px;
     .imageProject {
       position: relative;
       z-index: 2;
@@ -35,7 +36,7 @@
         display: none;
         background: transparent;
         border: #000000 solid 4px;
-        height: 30vh;
+        height: 393px;
         width: 620px;
         position: absolute;
         top: 20px;
@@ -70,7 +71,7 @@
       vertical-align: middle;
       justify-content: center;
       width: 550px;
-      height: 30vh;
+      height: 393px;
       gap: 4px;
       position: absolute;
       left: 0;
@@ -235,20 +236,113 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .overProject {
+    height: 275px;
+    margin-bottom: 400px;
+    width: unset;
+    padding: 0;
+
+    .aboutProject {
+      .informations {
+        width: unset;
+        margin: 0;
+      }
+    }
+
     .imageProject {
       .showBorder {
-        height: 100% !important;
-        width: 100% !important;
+        height: 275px !important;
+        width: 434px !important;
       }
 
       img {
-        height: 25vh;
+        height: 275px;
       }
     }
-    .informations {
-      width: unset !important;
+    .imageProject ~ .informations {
+      top: 300px;
     }
   }
+}
+
+@media screen and (max-width: 550px) {
+  .overProject {
+    height: 175px;
+    margin-bottom: 400px;
+    .number {
+      font-size: 36px;
+    }
+    .aboutProject {
+      .informations {
+        width: unset;
+        margin: 0;
+        right: 0;
+      }
+    }
+
+    .imageProject {
+      .showBorder {
+        height: 175px !important;
+        width: 276px !important;
+      }
+
+      img {
+        height: 175px;
+      }
+    }
+    .imageProject ~ .informations {
+      top: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .overProject {
+    height: 150px;
+    margin-bottom: 500px;
+    .number {
+      font-size: 36px;
+    }
+    .aboutProject {
+      .informations {
+        width: unset;
+        margin: 0;
+        right: 0;
+        .title {
+          font-size: 32px;
+        }
+      }
+
+      .imageProject {
+        .showBorder {
+          height: 150px !important;
+          width: 237px !important;
+        }
+
+        img {
+          height: 150px;
+        }
+        .showLinkArrow {
+          .showLinkArrowImg {
+            height: 25px;
+            right: -30px;
+          }
+        }
+      }
+      .imageProject ~ .informations {
+        top: 200px;
+      }
+    }
+  }
+  .reversedClass {  
+    .reversedImageProject {
+        .reversedArrowLink img {
+        right: unset !important;
+        left: -30px !important;
+      }
+    }
+  }
+
+
 }

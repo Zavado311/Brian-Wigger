@@ -14,8 +14,12 @@
     </article>
     <article>
       <ul>
-        <li>📍 <strong>{{ "ABOUT_ME.LOCATION" | translate }}</strong></li>
-        <li>🌍 <strong>{{ "ABOUT_ME.REMOTE_WORK" | translate }}</strong></li>
+        <li>
+          📍 <strong>{{ "ABOUT_ME.LOCATION" | translate }}</strong>
+        </li>
+        <li>
+          🌍 <strong>{{ "ABOUT_ME.REMOTE_WORK" | translate }}</strong>
+        </li>
       </ul>
       <p>
         {{ "ABOUT_ME.CONTACT_MESSAGE" | translate }}
@@ -25,7 +29,12 @@
     <button>{{ "ABOUT_ME.CONTACT_BUTTON" | translate }}</button>
   </section>
   <section class="showPicture">
-    <img src="./../../assets/img/Brian Wigger/BrianWigger.JPG" alt="{{ 'ABOUT_ME.IMAGE_ALT' | translate }}" />
-    <div class="border"></div>
+    <div class="imgWithBorder">
+      <img
+        src="./../../assets/img/Brian Wigger/BrianWigger.JPG"
+        alt="{{ 'ABOUT_ME.IMAGE_ALT' | translate }}"
+      />
+      <div class="border"></div>
+    </div>
   </section>
 </div>

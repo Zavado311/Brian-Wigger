@@ -27,3 +27,14 @@
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+  .overallArrow {
+    .pictureArrow {
+      img {
+        height: unset;
+        width: 100%;
+      }
+    }
+  }
+}
