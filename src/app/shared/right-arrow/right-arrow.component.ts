@@ -28,14 +28,14 @@ export class RightArrowComponent implements AfterViewInit {
   @ViewChild('targetImage') yourElement!: ElementRef;
 
   ngAfterViewInit() {
-    const threshold = 0.2; // how much % of the element is in view
+    const threshold = 0.2;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             this.startScrollDownAnimation();
 
-            observer.disconnect(); // disconnect if you want to stop observing else it will rerun every time its back in view. Just make sure you disconnect in ngOnDestroy instead
+            observer.disconnect();
           }
         });
       },

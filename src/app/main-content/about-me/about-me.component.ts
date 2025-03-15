@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({

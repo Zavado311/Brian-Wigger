@@ -1,20 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, HostListener, OnInit } from '@angular/core';
 import { PortfolioComponent } from '../portfolio.component';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-mouseOnProject = false;
+  mouseOnProject = false;
 
-ngOnInit(): void {
-  this.checkScreenSize();
-}
+  ngOnInit(): void {
+    this.checkScreenSize();
+  }
 
   @Input() project!: {
     photo: string;
@@ -24,10 +25,10 @@ ngOnInit(): void {
     github: string;
     link: string;
   };
-  @Input() reversed!: boolean; 
-  @Input() number!: number; 
+  @Input() reversed!: boolean;
+  @Input() number!: number;
   @Input() projects: any[] = [];
-  @Input() length!: number; 
+  @Input() length!: number;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any): void {
@@ -42,14 +43,11 @@ ngOnInit(): void {
     }
   }
 
-showInformations() {
-  this.mouseOnProject = true;
-  
-}
-  
-hideInformations() {
-  this.mouseOnProject = false;
+  showInformations() {
+    this.mouseOnProject = true;
+  }
 
-}
-
+  hideInformations() {
+    this.mouseOnProject = false;
+  }
 }

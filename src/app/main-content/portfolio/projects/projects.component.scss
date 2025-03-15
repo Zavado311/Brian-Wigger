@@ -29,27 +29,30 @@
     justify-content: space-between;
     flex-direction: row;
     height: 460px;
-    .imageProject {
-      position: relative;
-      z-index: 2;
-      .showBorder {
-        display: none;
-        background: transparent;
-        border: #000000 solid 4px;
-        height: 393px;
-        width: 620px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        pointer-events: none;
-      }
-      .showLinkArrow img {
-        display: none;
-        position: absolute;
-        height: 48px;
-        top: 50%;
-        right: -44px;
-        transform: rotate(120deg);
+    a {
+      text-decoration: none;
+      .imageProject {
+        position: relative;
+        z-index: 2;
+        .showBorder {
+          display: none;
+          background: transparent;
+          border: #000000 solid 4px;
+          height: 393px;
+          width: 620px;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          pointer-events: none;
+        }
+        .showLinkArrow img {
+          display: none;
+          position: absolute;
+          height: 48px;
+          top: 50%;
+          right: -44px;
+          transform: rotate(120deg);
+        }
       }
     }
     .title {
@@ -164,71 +167,32 @@
     transform: rotate(20deg);
   }
 }
-/*
-@media screen and (max-width: 1500px) {
+
+@media screen and (max-width: 1450px) {
   .overProject {
-    width: unset;
-    margin: 0 25px 375px 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     .aboutProject {
-      margin: 0 25px;
-      width: unset;
+      .informations {
+        transition: top 125ms ease-in-out;
+        left: unset !important;
+        top: 400px;
+        width: 620px;
+      }
     }
-    .number {
-      top: 0;
-    }
-  }
-
-  .aboutProject {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .informations {
-    margin: 0 25px;
-  }
-
-  .showTheInformation {
-    left: 0 !important;
-    top: 400px;
-  }
-
-  .reversedInformation {
-    left: 0 !important;
-    top: 400px;
-  }
-
-  .informations {
-    left: 0 !important;
-    right: 0;
-    top: 400px;
-  }
-
-  .reversedClass {
-    top: 500px !important;
-  }
-}
-*/
-
-@media screen and (max-width: 1500px) {
-  .informations {
-    transition: top 125ms ease-in-out;
-    left: unset !important;
   }
 
   .imageProject ~ .informations {
     left: unset !important;
-    top: 420px;
+    top: 400px;
+    width: 620px;
   }
 
   .reversedImageProject ~ .informations {
     left: unset !important;
-    top: 420px;
+    top: 400px;
     right: 72px;
     align-items: end;
     text-align: end;
+    width: 620px;
   }
 
   .overProject {
@@ -245,31 +209,33 @@
 
     .aboutProject {
       .informations {
-        width: unset;
+        width: 430px;
         margin: 0;
+        top: 300px;
       }
     }
+    a {
+      .imageProject {
+        .showBorder {
+          height: 275px !important;
+          width: 434px !important;
+        }
 
-    .imageProject {
-      .showBorder {
-        height: 275px !important;
-        width: 434px !important;
+        img {
+          height: 275px;
+        }
       }
-
-      img {
-        height: 275px;
+      .imageProject ~ .informations {
+        top: 300px;
       }
-    }
-    .imageProject ~ .informations {
-      top: 300px;
     }
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .overProject {
     height: 175px;
-    margin-bottom: 400px;
+    margin-bottom: 500px;
     .number {
       font-size: 36px;
     }
@@ -278,21 +244,24 @@
         width: unset;
         margin: 0;
         right: 0;
+        top: 200px;
       }
     }
 
-    .imageProject {
-      .showBorder {
-        height: 175px !important;
-        width: 276px !important;
-      }
+    a {
+      .imageProject {
+        .showBorder {
+          height: 175px !important;
+          width: 276px !important;
+        }
 
-      img {
-        height: 175px;
+        img {
+          height: 175px;
+        }
       }
-    }
-    .imageProject ~ .informations {
-      top: 200px;
+      .imageProject ~ .informations {
+        top: 100px;
+      }
     }
   }
 }
@@ -335,14 +304,12 @@
       }
     }
   }
-  .reversedClass {  
+  .reversedClass {
     .reversedImageProject {
-        .reversedArrowLink img {
+      .reversedArrowLink img {
         right: unset !important;
         left: -30px !important;
       }
     }
   }
-
-
 }

@@ -7,24 +7,40 @@
     (mouseleave)="hideInformations()"
     [ngClass]="reversed ? 'reversedClass' : ''"
   >
-    <div
-      class="imageProject"
-      [ngClass]="{'reversedImageProject' : reversed, 'showColoredImage' : mouseOnProject}"
-      (mouseenter)="showInformations()"
-    >
-      <img [ngClass]="mouseOnProject ? 'showColoredImage' : ''" src="./../../../assets/img/projects/{{ project.photo }}" alt="{{ project.photo }}" />
+    <a [routerLink]="project.link" target="_blank">
       <div
-        class="showBorder"
-        [ngClass]="{ 'reversedShowBorder': reversed, 'showIt ': mouseOnProject }"
-      ></div>
-      <div class="showLinkArrow" [ngClass]="reversed ? 'reversedArrowLink' : ''" >
+        class="imageProject"
+        [ngClass]="{
+          reversedImageProject: reversed,
+          showColoredImage: mouseOnProject
+        }"
+        (mouseenter)="showInformations()"
+      >
         <img
-          class="showLinkArrowImg" [ngClass]="mouseOnProject ? 'showIt  showAnimationArrow' : ''"
-          src="./../../../assets/img/LinkArrow.svg"
-          alt="Arrow"
+          [ngClass]="mouseOnProject ? 'showColoredImage' : ''"
+          src="./../../../assets/img/projects/{{ project.photo }}"
+          alt="{{ project.photo }}"
         />
+        <div
+          class="showBorder"
+          [ngClass]="{
+            reversedShowBorder: reversed,
+            'showIt ': mouseOnProject
+          }"
+        ></div>
+        <div
+          class="showLinkArrow"
+          [ngClass]="reversed ? 'reversedArrowLink' : ''"
+        >
+          <img
+            class="showLinkArrowImg"
+            [ngClass]="mouseOnProject ? 'showIt  showAnimationArrow' : ''"
+            src="./../../../assets/img/LinkArrow.svg"
+            alt="Arrow"
+          />
+        </div>
       </div>
-    </div>
+    </a>
     <div
       class="informations"
       [ngClass]="{
@@ -35,7 +51,7 @@
       <div class="title">{{ project.title }}</div>
       <div class="usedProgramms">{{ project.usedProgramms }}</div>
       <div class="description">{{ project.description }}</div>
-      <button>Github</button>
+      <a [href]="project.github" target="_blank"><button>Github</button></a>
     </div>
   </div>
 </div>
