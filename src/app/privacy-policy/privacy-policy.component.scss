@@ -1,0 +1,13 @@
+app-header {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 9999;
+}
+
+app-privacy-policy-informations {
+  display: flex;
+  justify-content: center;
+}

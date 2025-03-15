@@ -186,7 +186,6 @@
             justify-content: flex-end;
           }
           .sayHiText {
-            margin-bottom: 55px;
             .textSayHi {
               font-size: 56px;
             }
@@ -199,7 +198,7 @@
           height: unset;
         }
         .hoverLink::after {
-        width: 106px;
+          width: 106px;
         }
       }
     }

@@ -182,7 +182,14 @@
     gap: 8px;
 
     .informationPrivacyPolicy {
-   
+      div {
+        display: inline;
+      }
+      .privacyLink:hover {
+        color: #00bc8f;
+        cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+          pointer;
+      }
     }
 
     .overCheckboxPrivacyPolicy {
@@ -228,7 +235,7 @@
   .backgroundImage {
     margin-top: unset;
   }
- 
+
   .overContactform {
     h2 {
       padding-bottom: 24px;
@@ -250,10 +257,9 @@
   .backgroundImage {
     margin-top: unset;
   }
- 
+
   .overContactform {
     h2 {
-      
     }
     h3 {
       font-size: 32px;

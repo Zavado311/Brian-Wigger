@@ -78,6 +78,8 @@
       .legalNoticeText {
         display: flex;
         font-size: 16px;
+        cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+          pointer;
       }
     }
 
@@ -102,5 +104,17 @@
 
   .section {
     width: unset !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .blackBackground {
+    .overFooter {
+      .aboutMe {
+        .copyright {
+          font-size: 12px;
+        }
+      }
+    }
   }
 }

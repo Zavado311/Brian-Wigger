@@ -3,18 +3,19 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contactform',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule],
+  imports: [CommonModule, FormsModule, TranslateModule, RouterModule],
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.scss',
 })
 export class ContactformComponent implements OnInit {
   checkboxChecked: boolean = false;
   ImageOfCheckbox: string = '';
-  mailTest = true;
+  mailTest = false;
 
   http = inject(HttpClient);
 
@@ -49,7 +50,7 @@ export class ContactformComponent implements OnInit {
   }
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://brianwigger.ch/app/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

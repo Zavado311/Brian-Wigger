@@ -18,10 +18,9 @@
           <div class="labelline">{{ "CONTACT.NAME" | translate }}</div>
           @if(name.valid) {
           <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          } @if(!name.valid && name.touched && !name.disabled) {
+          <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
           }
-          @if(!name.valid && name.touched && !name.disabled) {
-            <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
-            }
         </div>
         @if(!name.valid && name.touched && !name.disabled) {
         <span class="completeField">{{
@@ -30,22 +29,28 @@
         }
         <div class="entryarea">
           <input
-          class="emailInput"
+            class="emailInput"
             #email="ngModel"
             [(ngModel)]="contactData.email"
             type="text"
             name="email"
             required
-            [ngClass]="{'input-filled': email && contactData.email.length >= 1}"
+            [ngClass]="{
+              'input-filled': email && contactData.email.length >= 1
+            }"
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           />
-          <div class="labelline" [ngClass]="{'labelline-filled': contactData.email.length >= 1}">{{ "CONTACT.EMAIL" | translate }}</div>
+          <div
+            class="labelline"
+            [ngClass]="{ 'labelline-filled': contactData.email.length >= 1 }"
+          >
+            {{ "CONTACT.EMAIL" | translate }}
+          </div>
           @if(email.valid && email.touched && !email.disabled) {
           <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          } @if(!email.valid && email.touched && !email.disabled) {
+          <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
           }
-          @if(!email.valid && email.touched && !email.disabled) {
-            <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
-            }
         </div>
         @if(!email.valid && email.touched && !email.disabled) {
         <span class="completeField">{{
@@ -64,10 +69,9 @@
           <div class="labelline">{{ "CONTACT.MESSAGE" | translate }}</div>
           @if(message.valid) {
           <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          } @if(!message.valid && message.touched && !message.disabled) {
+          <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
           }
-          @if(!message.valid && message.touched && !message.disabled) {
-            <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
-            }
         </div>
         @if(!message.valid && message.touched && !message.disabled) {
         <span class="completeTextarea">{{
@@ -90,14 +94,25 @@
               />
             </div>
           </div>
-          <div
-            class="informationPrivacyPolicy"
-            [innerHTML]="'CONTACT.PRIVACY' | translate"
-          ></div>
+          <div class="informationPrivacyPolicy">
+            <div>
+              {{ "CONTACT.PRIVACY_1" | translate }}
+            </div>
+            <div routerLink="/privacypolicy" class="privacyLink">
+              {{ "CONTACT.PRIVACY_LINK" | translate }}
+            </div>
+            <div>
+              {{ "CONTACT.PRIVACY_2" | translate }}
+            </div>
+          </div>
         </div>
         <div class="sendForm">
-          <button [ngClass]="{'disabledButton': !contactData.checkbox}"
-          [disabled]="!contactData.checkbox">{{ "CONTACT.BUTTON" | translate }}</button>
+          <button
+            [ngClass]="{ disabledButton: !contactData.checkbox }"
+            [disabled]="!contactData.checkbox"
+          >
+            {{ "CONTACT.BUTTON" | translate }}
+          </button>
         </div>
       </form>
     </div>

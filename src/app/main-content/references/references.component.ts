@@ -13,17 +13,17 @@ import { TranslateModule } from '@ngx-translate/core';
 export class ReferencesComponent {
   references = [
     {
-      autor: 'V. Schuster',
+      autor: 'A. Pawlik',
       enterprise: 'Team Partner',
       feedbackKey: 'REFERENCES.FEEDBACKS.REFERENCE_1'
     },
     {
-      autor: 'V. Schuster',
+      autor: 'R. Punto',
       enterprise: 'Team Partner',
       feedbackKey: 'REFERENCES.FEEDBACKS.REFERENCE_2'
     },
     {
-      autor: 'V. Schuster',
+      autor: 'P. Dietrich',
       enterprise: 'Team Partner',
       feedbackKey: 'REFERENCES.FEEDBACKS.REFERENCE_3'
     }

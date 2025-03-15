@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { MainContentComponent } from './main-content/main-content.component';
+import { Router, NavigationEnd, RouterOutlet} from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -11,9 +10,18 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('de'); // Standard auf Deutsch setzen
-    this.translate.use('de'); // Deutsch aktivieren
+export class AppComponent implements OnInit {
+  constructor(private translate: TranslateService, private router: Router) {
+    this.translate.setDefaultLang('de'); 
+    this.translate.use('de'); 
   }
+
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        window.scrollTo(0, 0)
+    });
+}
 }

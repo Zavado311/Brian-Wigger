@@ -43,7 +43,6 @@
     justify-content: center;
     padding: 78px 0;
     gap: 26px;
-
     .continuedLearning {
       display: flex;
       flex-direction: column;
@@ -58,14 +57,13 @@
         cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
           pointer;
       }
-
       .contactMeLink a::after {
         content: "";
         position: absolute;
         opacity: 0;
         left: 0;
         bottom: -3px;
-        width: 55px;
+        width: 25%;
         height: 2px;
         background-color: #00bc8f;
       }
@@ -73,10 +71,7 @@
         opacity: 1;
         transform: translateX(170px) ;
         transition: transform 125ms ease-in-out;
-
-      
       }
-
       .contactMeLink a:hover {
         font-weight: 700;
         transition: font-weight 125ms;

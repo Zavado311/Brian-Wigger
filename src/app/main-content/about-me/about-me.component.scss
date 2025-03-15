@@ -44,31 +44,36 @@ h2 {
     }
   }
 
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    margin: auto;
-    height: 68px;
-    padding: 20px 60px;
-    gap: 10px;
-    border: 4px solid #000000;
-    background-color: unset;
-    font-size: 23px;
-    transition: transform 125ms;
+  a {
+text-decoration: none;
 
-    &:hover {
-      cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
-      transform: scaleX(1.1);
-      font-weight: 700;
-    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      margin: auto;
+      height: 68px;
+      padding: 20px 60px;
+      gap: 10px;
+      border: 4px solid #000000;
+      background-color: unset;
+      font-size: 23px;
+      transition: transform 125ms;
 
-    &:active {
-      transform: scaleX(1.1);
-      font-weight: 700;
-      background-color: #000000;
-      color: #fffcf3;
+      &:hover {
+        cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
+          pointer;
+        transform: scaleX(1.1);
+        font-weight: 700;
+      }
+
+      &:active {
+        transform: scaleX(1.1);
+        font-weight: 700;
+        background-color: #000000;
+        color: #fffcf3;
+      }
     }
   }
 }
@@ -179,7 +184,6 @@ h2 {
           height: 380px;
           width: 380px;
         }
-        
       }
     }
   }
