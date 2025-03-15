@@ -50,7 +50,7 @@ export class ContactformComponent implements OnInit {
   }
 
   post = {
-    endPoint: 'https://brianwigger.ch/app/sendMail.php',
+    endPoint: 'https://brianwigger.ch/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -67,14 +67,22 @@ export class ContactformComponent implements OnInit {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.ImageOfCheckbox = '';
+            this.checkboxChecked = false;
+            this.contactData.email = '';
+            this.ImageOfCheckbox = './../../assets/img/checkboxWhite.svg';
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid) {
       ngForm.resetForm();
+      this.ImageOfCheckbox = '';
+      this.checkboxChecked = false;
+      this.contactData.email = '';
+      this.ImageOfCheckbox = './../../assets/img/checkboxWhite.svg';
     }
   }
 }
