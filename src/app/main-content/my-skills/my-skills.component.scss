@@ -69,7 +69,7 @@
       }
       .contactMeLink a:hover::after {
         opacity: 1;
-        transform: translateX(170px) ;
+        transform: translateX(170px);
         transition: transform 125ms ease-in-out;
       }
       .contactMeLink a:hover {
@@ -204,6 +204,10 @@
 
       .continuedLearning {
         display: flex;
+
+        .contactMeLink a {
+          padding: unset;
+        }
 
         div {
           align-self: start;
