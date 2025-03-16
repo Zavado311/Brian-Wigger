@@ -1,7 +1,7 @@
 .overallArrow {
   display: flex;
   justify-content: center;
-  padding: 60px 0;
+  padding: 32px 0;
   width: 1500px;
   margin: auto;
   .pictureArrow {
@@ -17,10 +17,32 @@
 @media screen and (max-width: 1500px) {
   .overallArrow {
     width: unset;
+    overflow: hidden;
     .pictureArrow {
       img {
-        height: unset;
-        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .overallArrow {
+    overflow: hidden;
+    .pictureArrow {
+      img {
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .overallArrow {
+    .pictureArrow {
+      img {
+        height: 180px;
+        margin-right: unset;
       }
     }
   }

@@ -122,7 +122,7 @@
 
   .heroDirections {
     .emailConnection {
-      font-size: 4vw;
+      font-size: 2vw;
       a {
         margin: -50px 0 7px -38px;
       }
@@ -133,6 +133,14 @@
         width: 78px;
         align-self: center;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .heroDirections {
+    .emailConnection {
+      font-size: 4vw;
     }
   }
 }

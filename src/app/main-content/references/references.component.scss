@@ -15,9 +15,9 @@
     text-decoration-skip-ink: none;
     display: flex;
     justify-content: center;
-    padding: 64px 0 48px 0;
+    align-self: center;
+    margin: 0px auto 34px auto;
     width: fit-content;
-    margin: 0 auto;
     &:hover {
       color: #00bc8f;
     }
@@ -54,9 +54,6 @@
 @media screen and (max-width: 1500px) {
   .overReferences {
     margin: 0 25px;
-    h2 {
-      font-size: 8vw;
-    }
     p {
       font-size: 20px;
     }
@@ -79,23 +76,24 @@
       width: unset;
       margin: 0 25px;
     }
+    h2 {
+      margin: 0;
+      font-size: 8vw;
+    }
+
     .setFeedbacks {
       display: flex;
       justify-content: center;
       app-reference-box {
-       width: unset;
-      margin: 0 25px;
+        width: unset;
+        margin: 0 25px;
       }
     }
-  
   }
 }
 
 @media screen and (max-width: 420px) {
   .overReferences {
-    h2 {
-      padding: 32px 0 24px 0;
-    }
     p {
       font-size: 16px;
       width: unset;
@@ -105,10 +103,9 @@
       display: flex;
       justify-content: center;
       app-reference-box {
-       width: unset;
-      margin: 0 25px;
+        width: unset;
+        margin: 0 25px;
       }
     }
-  
   }
 }

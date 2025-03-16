@@ -3,11 +3,13 @@ import { LegalNoticeComponent } from './main-content/legal-notice/legal-notice.c
 import { AppComponent } from './app.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { ConfirmationContactformComponent } from './main-content/confirmation-contactform/confirmation-contactform.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: MainContentComponent, pathMatch: 'full' 
+    component: MainContentComponent,
+    pathMatch: 'full',
   },
   {
     path: 'legal',
@@ -16,5 +18,9 @@ export const routes: Routes = [
   {
     path: 'privacypolicy',
     component: PrivacyPolicyComponent,
+  },
+  {
+    path: 'confirmation',
+    component: ConfirmationContactformComponent,
   },
 ];

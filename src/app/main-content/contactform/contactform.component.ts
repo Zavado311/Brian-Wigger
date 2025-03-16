@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contactform',
@@ -25,6 +25,11 @@ export class ContactformComponent implements OnInit {
     message: '',
     checkbox: false,
   };
+
+  constructor(private _router: Router) {}
+  onBack(): void {
+    this._router.navigate(['/confirmation']);
+  }
 
   ngOnInit(): void {
     this.changeImageOfCheckbox();
@@ -71,6 +76,7 @@ export class ContactformComponent implements OnInit {
             this.checkboxChecked = false;
             this.contactData.email = '';
             this.ImageOfCheckbox = './../../assets/img/checkboxWhite.svg';
+            this._router.navigate(['/confirmation']);
           },
           error: (error) => {
             console.error(error);
@@ -83,6 +89,7 @@ export class ContactformComponent implements OnInit {
       this.checkboxChecked = false;
       this.contactData.email = '';
       this.ImageOfCheckbox = './../../assets/img/checkboxWhite.svg';
+      this._router.navigate(['/confirmation']);
     }
   }
 }
