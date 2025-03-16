@@ -24,6 +24,7 @@
       a {
         height: 100%;
         display: flex;
+        color: black;
         img {
           cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
             pointer;
@@ -39,7 +40,7 @@
           font-size: 24px;
           border: unset;
           background-color: unset;
-
+          color: black !important;
           &:hover {
             color: #00bc8f;
             cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,

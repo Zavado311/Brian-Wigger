@@ -100,10 +100,10 @@
       vertical-align: middle;
       font-size: 22px;
     }
-  }
-  img {
-    height: 180px;
-    width: 116px;
+    img {
+      height: 180px;
+      width: 116px;
+    }
   }
 }
 
@@ -117,6 +117,22 @@
 
     .heroName {
       font-size: 5vw;
+    }
+  }
+
+  .heroDirections {
+    .emailConnection {
+      font-size: 4vw;
+      a {
+        margin: -50px 0 7px -38px;
+      }
+    }
+    .scrollDown {
+      img {
+        height: 120px;
+        width: 78px;
+        align-self: center;
+      }
     }
   }
 }

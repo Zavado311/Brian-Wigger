@@ -16,7 +16,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
 
   private rawProjects = [
     {
-      photo: 'join/join.svg',
+      photo: 'join/join.png',
       titleKey: 'PROJECTS.JOIN.TITLE',
       usedProgrammsKey: 'PROJECTS.JOIN.USED_PROGRAMS',
       descriptionKey: 'PROJECTS.JOIN.DESCRIPTION',
@@ -32,7 +32,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
       link: '/elpolloloco',
     },
     {
-      photo: 'pokedex/pokedex.svg',
+      photo: 'pokedex/pokedex.png',
       titleKey: 'PROJECTS.POKEDEX.TITLE',
       usedProgrammsKey: 'PROJECTS.POKEDEX.USED_PROGRAMS',
       descriptionKey: 'PROJECTS.POKEDEX.DESCRIPTION',

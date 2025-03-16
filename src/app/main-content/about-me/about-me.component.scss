@@ -45,7 +45,7 @@ h2 {
   }
 
   a {
-text-decoration: none;
+    text-decoration: none;
 
     button {
       display: flex;
@@ -60,7 +60,7 @@ text-decoration: none;
       background-color: unset;
       font-size: 23px;
       transition: transform 125ms;
-
+      color: #000000;
       &:hover {
         cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
           pointer;
