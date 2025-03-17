@@ -55,12 +55,12 @@
         <div class="language">
           <button
             [ngClass]="{ 'colorActive' : languageDE }"
-            (click)="switchLanguage('de'); languageDE = true"
+            (click)="switchLanguage('de')"
           >
             DE</button
           >|<button
             [ngClass]="{ 'colorActive' : !languageDE }"
-            (click)="switchLanguage('en'); languageDE = false"
+            (click)="switchLanguage('en')"
           >
             EN
           </button>

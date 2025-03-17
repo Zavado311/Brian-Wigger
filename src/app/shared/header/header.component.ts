@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MenuHamburgerComponent } from '../../main-content/menu-hamburger/menu-hamburger.component';
 import { CommonModule } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
@@ -11,13 +11,28 @@ import { RouterLink, RouterModule } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   languageDE: boolean = true;
 
   constructor(private translate: TranslateService) {}
 
+  ngOnInit(): void {
+    let savedLang = localStorage.getItem('languageDE');
+    if (savedLang) {
+      let parsedLang = JSON.parse(savedLang);
+      this.switchLanguage(parsedLang);
+    }
+  }
+
   switchLanguage(lang: string): void {
     this.translate.use(lang);
+    if (lang == 'de') {
+      this.languageDE = true;
+      localStorage.setItem('languageDE', JSON.stringify(true));
+    } else {
+      this.languageDE = false;
+      localStorage.setItem('languageDE', JSON.stringify(false));
+    }
   }
 
   private openMenuIntervalId: any;
