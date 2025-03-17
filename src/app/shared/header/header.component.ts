@@ -12,6 +12,8 @@ import { RouterLink, RouterModule } from '@angular/router';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  languageDE: boolean = true;
+
   constructor(private translate: TranslateService) {}
 
   switchLanguage(lang: string): void {

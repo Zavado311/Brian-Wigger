@@ -26,6 +26,10 @@
         display: flex;
         color: black;
 
+        &:hover {
+          color: #00bc8f;
+        }
+
         svg {
           cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0,
             pointer;
@@ -45,7 +49,7 @@
           font-size: 24px;
           border: unset;
           background-color: unset;
-          color: black !important;
+          color: black;
 
           &:hover {
             color: #00bc8f;
@@ -68,6 +72,10 @@
 
   .hamburger img:hover {
     cursor: url("./../../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
+  }
+
+  .colorActive {
+    color: #00bc8f !important;
   }
 
   app-menu-hamburger {

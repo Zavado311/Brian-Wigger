@@ -24,13 +24,26 @@
 
   .aboutProject {
     padding-top: 60px;
-    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 460px;
-   
+    transform: translateX(0);
+    height: 696px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    animation: slide-in linear;
+    animation-timeline: view();
+    animation-range-start: 0;
+    animation-range-end: 50vh;
 
+    @keyframes slide-in {
+      from {
+        transform: translateX(-200px);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
 
     a {
       text-decoration: none;
@@ -175,6 +188,7 @@
 @media screen and (max-width: 1450px) {
   .overProject {
     .aboutProject {
+      height: 800px;
       .informations {
         transition: top 125ms ease-in-out;
         left: unset !important;
@@ -198,19 +212,14 @@
     text-align: end;
     width: 620px;
   }
-
-  .overProject {
-    margin-bottom: 300px;
-  }
 }
 
 @media screen and (max-width: 850px) {
   .overProject {
-    height: 275px;
-    margin-bottom: 400px;
+    margin-bottom: 0;
     width: unset;
     padding: 0;
-
+    height: 800px;
     .aboutProject {
       .informations {
         width: 430px;
@@ -238,12 +247,11 @@
 
 @media screen and (max-width: 600px) {
   .overProject {
-    height: 175px;
-    margin-bottom: 500px;
     .number {
       font-size: 36px;
     }
     .aboutProject {
+      height: 600px;
       .informations {
         width: unset;
         margin: 0;
@@ -272,8 +280,6 @@
 
 @media screen and (max-width: 420px) {
   .overProject {
-    height: 150px;
-    margin-bottom: 500px;
     .number {
       font-size: 36px;
     }

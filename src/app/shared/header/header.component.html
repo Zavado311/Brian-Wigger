@@ -11,7 +11,6 @@
             role="img"
             aria-label="BW Logo"
           >
-         
             <text
               x="5"
               y="30"
@@ -54,7 +53,13 @@
       </div>
       <div class="headerOptions">
         <div class="language">
-          <button (click)="switchLanguage('de')">DE</button>|<button
+          <button
+            [ngClass]="{ 'colorActive' : languageDE }"
+            (click)="switchLanguage('de')"
+          >
+            DE</button
+          >|<button
+            [ngClass]="{ 'colorActive' : !languageDE }"
             (click)="switchLanguage('en')"
           >
             EN
