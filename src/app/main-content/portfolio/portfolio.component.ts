@@ -21,7 +21,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
       usedProgrammsKey: 'PROJECTS.JOIN.USED_PROGRAMS',
       descriptionKey: 'PROJECTS.JOIN.DESCRIPTION',
       github: 'https://github.com/Paul-Ja82/Join',
-      link: '/join/add_task.html',
+      link: '/join/log_in.html',
     },
     {
       photo: 'elPolloLoco/elPolloLoco.svg',

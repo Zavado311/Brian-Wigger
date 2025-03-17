@@ -108,8 +108,19 @@
         </div>
         <div class="sendForm">
           <button
-            [ngClass]="{ disabledButton: !contactData.checkbox }"
-            [disabled]="!contactData.checkbox"
+            [ngClass]="{
+              disabledButton:
+                !contactData.checkbox ||
+                !contactData.email ||
+                !contactData.name ||
+                !contactData.message
+            }"
+            [disabled]="
+              !contactData.checkbox ||
+              !contactData.email ||
+              !contactData.name ||
+              !contactData.message
+            "
           >
             {{ "CONTACT.BUTTON" | translate }}
           </button>
