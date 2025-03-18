@@ -17,22 +17,16 @@ export class HeaderComponent implements OnInit {
   constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
-    let savedLang = localStorage.getItem('languageDE');
+    let savedLang = localStorage.getItem('language');
     if (savedLang) {
-      let parsedLang = JSON.parse(savedLang);
-      this.switchLanguage(parsedLang);
+      this.switchLanguage(savedLang); 
     }
   }
 
   switchLanguage(lang: string): void {
     this.translate.use(lang);
-    if (lang == 'de') {
-      this.languageDE = true;
-      localStorage.setItem('languageDE', JSON.stringify(true));
-    } else {
-      this.languageDE = false;
-      localStorage.setItem('languageDE', JSON.stringify(false));
-    }
+    this.languageDE = lang === 'de'; 
+    localStorage.setItem('language', lang); 
   }
 
   private openMenuIntervalId: any;

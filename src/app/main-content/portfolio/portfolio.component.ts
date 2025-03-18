@@ -1,7 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { CommonModule } from '@angular/common';
-import { TranslateModule, TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import {
+  TranslateModule,
+  TranslateService,
+  LangChangeEvent,
+} from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -62,14 +66,14 @@ export class PortfolioComponent implements OnInit, OnDestroy {
   }
 
   private updateTranslations(): void {
-    const keys = this.rawProjects.flatMap(p => [
+    const keys = this.rawProjects.flatMap((p) => [
       p.titleKey,
       p.usedProgrammsKey,
       p.descriptionKey,
     ]);
 
-    this.translate.get(keys).subscribe(translations => {
-      this.projects = this.rawProjects.map(p => ({
+    this.translate.stream(keys).subscribe((translations) => {
+      this.projects = this.rawProjects.map((p) => ({
         photo: p.photo,
         title: translations[p.titleKey] || p.titleKey,
         usedProgramms: translations[p.usedProgrammsKey] || p.usedProgrammsKey,

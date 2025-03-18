@@ -95,7 +95,7 @@
       position: absolute;
       left: 0;
 
-      button {
+      a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -317,7 +317,7 @@
     .reversedImageProject {
       .reversedArrowLink img {
         right: unset !important;
-        left: -30px !important;
+        left: -42px !important;
       }
     }
   }
