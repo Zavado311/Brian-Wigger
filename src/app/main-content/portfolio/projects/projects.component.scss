@@ -12,13 +12,11 @@
   .imageProject img {
     filter: grayscale(1);
     height: 393px;
-    cursor: url("./../../../../assets/img/cursor/cursorPointer.svg") 0 0,
-      pointer;
+    cursor: url("/assets/img/cursor/cursorPointer.svg") 0 0, pointer;
 
     &:hover {
       filter: grayscale(0);
-      cursor: url("./../../../../assets/img/cursor/cursorPointer.svg") 0 0,
-        pointer;
+      cursor: url("/assets/img/cursor/cursorPointer.svg") 0 0, pointer;
     }
   }
 
@@ -111,8 +109,7 @@
         transition: width 125ms;
         color: #000000;
         &:hover {
-          cursor: url("./../../../../assets/img/cursor/cursorPointer.svg") 0 0,
-            pointer;
+          cursor: url("/assets/img/cursor/cursorPointer.svg") 0 0, pointer;
           width: 207px;
           font-weight: 700;
           &:active {
@@ -136,7 +133,7 @@
 
 .showColoredImage {
   filter: grayscale(0) !important;
-  cursor: url("./../../../../assets/img/cursor/cursorPointer.svg") 0 0, pointer;
+  cursor: url("/tsconfig.json") 0 0, pointer;
 }
 
 .imageProject:hover ~ .informations {
@@ -219,7 +216,7 @@
     margin-bottom: 0;
     width: unset;
     padding: 0;
-    height: 610px;
+    height: 693px;
     .aboutProject {
       .informations {
         width: 430px;
@@ -255,7 +252,7 @@
         width: unset;
         margin: 0;
         right: 0;
-        top: 200px;
+        top: 225px;
       }
     }
 
@@ -271,7 +268,7 @@
         }
       }
       .imageProject ~ .informations {
-        top: 100px;
+        top: 225px;
       }
     }
   }
@@ -287,6 +284,7 @@
         width: unset;
         margin: 0;
         right: 0;
+        top: 175px;
         .title {
           font-size: 32px;
         }
@@ -294,12 +292,12 @@
 
       .imageProject {
         .showBorder {
-          height: 150px !important;
-          width: 237px !important;
+          height: 125px !important;
+          width: 197px !important;
         }
 
         img {
-          height: 150px;
+          height: 125px;
         }
         .showLinkArrow {
           .showLinkArrowImg {
@@ -309,7 +307,7 @@
         }
       }
       .imageProject ~ .informations {
-        top: 200px;
+        top: 175px;
       }
     }
   }

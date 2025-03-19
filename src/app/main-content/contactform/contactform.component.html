@@ -17,9 +17,9 @@
           />
           <div class="labelline">{{ "CONTACT.NAME" | translate }}</div>
           @if(name.valid) {
-          <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          <img src="assets/img/contactform/checkGreen.svg" alt="" />
           } @if(!name.valid && name.touched && !name.disabled) {
-          <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
+          <img src="assets/img/contactform/checkRed.svg" alt="" />
           }
         </div>
         @if(!name.valid && name.touched && !name.disabled) {
@@ -47,9 +47,9 @@
             {{ "CONTACT.EMAIL" | translate }}
           </div>
           @if(email.valid && email.touched && !email.disabled) {
-          <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          <img src="/assets/img/contactform/checkGreen.svg" alt="" />
           } @if(!email.valid && email.touched && !email.disabled) {
-          <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
+          <img src="/assets/img/contactform/checkRed.svg" alt="" />
           }
         </div>
         @if(!email.valid && email.touched && !email.disabled) {
@@ -68,9 +68,9 @@
           ></textarea>
           <div class="labelline">{{ "CONTACT.MESSAGE" | translate }}</div>
           @if(message.valid) {
-          <img src="./../../../assets/img/contactform/checkGreen.svg" alt="" />
+          <img src="/assets/img/contactform/checkGreen.svg" alt="" />
           } @if(!message.valid && message.touched && !message.disabled) {
-          <img src="./../../../assets/img/contactform/checkRed.svg" alt="" />
+          <img src="/assets/img/contactform/checkRed.svg" alt="" />
           }
         </div>
         @if(!message.valid && message.touched && !message.disabled) {

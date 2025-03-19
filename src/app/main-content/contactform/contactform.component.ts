@@ -48,9 +48,9 @@ export class ContactformComponent implements OnInit {
 
   changeImageOfCheckbox() {
     if (!this.checkboxChecked) {
-      this.ImageOfCheckbox = './../../assets/img/checkboxWhite.svg';
+      this.ImageOfCheckbox = '/assets/img/checkboxWhite.svg';
     } else {
-      this.ImageOfCheckbox = './../../assets/img/checkboxChecked.svg';
+      this.ImageOfCheckbox = '/assets/img/checkboxChecked.svg';
     }
   }
 
@@ -75,7 +75,7 @@ export class ContactformComponent implements OnInit {
             this.ImageOfCheckbox = '';
             this.checkboxChecked = false;
             this.contactData.email = '';
-            this.ImageOfCheckbox = './../../assets/img/checkboxWhite.svg';
+            this.ImageOfCheckbox = '/assets/img/checkboxWhite.svg';
             this._router.navigate(['/confirmation']);
           },
           error: (error) => {
@@ -88,7 +88,7 @@ export class ContactformComponent implements OnInit {
       this.ImageOfCheckbox = '';
       this.checkboxChecked = false;
       this.contactData.email = '';
-      this.ImageOfCheckbox = './../../assets/img/checkboxWhite.svg';
+      this.ImageOfCheckbox = '/assets/img/checkboxWhite.svg';
       this._router.navigate(['/confirmation']);
     }
   }

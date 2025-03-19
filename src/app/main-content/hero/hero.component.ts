@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './hero.component.scss',
 })
 export class HeroComponent implements OnInit {
-  showImage: string = '';
+  showImage: string = 'scrollDownAnimation/scrolldown1.png';
 
   scrollDownImages: string[] = [
     'scrollDownAnimation/scrolldown1.png',
