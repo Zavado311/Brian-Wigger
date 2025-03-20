@@ -2,7 +2,7 @@
     "ABOUT_ME": {
         "TITLE": "Über mich",
         "INTRO": "Ich bin ein Frontend-Entwickler mit Erfahrung in der Administration und im Kundenservice und erweitere derzeit meine Kenntnisse in der Fullstack-Entwicklung. Meine Leidenschaft liegt darin, intuitive und funktionale Benutzererlebnisse zu schaffen, während ich meine Fähigkeiten in modernen Webtechnologien kontinuierlich verbessere.",
-        "SKILLS": "Mit einer starken Problemlösungsmentalität und einem Auge für Details möchte ich die Lücke zwischen Design und Entwicklung schließen und nahtlose digitale Erlebnisse ermöglichen. Meine bisherige Erfahrung in kundenorientierten Rollen hilft mir, Benutzerbedürfnisse zu verstehen und wirkungsvolle Lösungen zu liefern.",
+        "SKILLS": "Mit einer starken Problemlösungsmentalität und einem Auge für Details möchte ich die Lücke zwischen Design und Entwicklung schliessen und nahtlose digitale Erlebnisse ermöglichen. Meine bisherige Erfahrung in kundenorientierten Rollen hilft mir, Benutzerbedürfnisse zu verstehen und wirkungsvolle Lösungen zu liefern.",
         "JOB_SEARCH": "Ich suche derzeit eine Remote-Position als Frontend-Entwickler, in der ich meine Fähigkeiten einbringen und mich weiterentwickeln kann.",
         "LOCATION": "Wohnhaft in der Schweiz",
         "REMOTE_WORK": "Offen für Remote-Arbeit",
@@ -31,7 +31,7 @@
         },
         "PRIVACY_1": "Ich habe die",
         "PRIVACY_LINK": "Datenschutzerklärung",
-        "PRIVACY_2": "gelesen und stimme der Verarbeitung meiner Daten gemäß den Richtlinien zu.",
+        "PRIVACY_2": "gelesen und stimme der Verarbeitung meiner Daten gemäss den Richtlinien zu.",
         "CHECKBOX_ALT": "Bild der Checkbox",
         "BUTTON": "Nachricht senden"
     },
@@ -89,7 +89,7 @@
         "TITLE": "Referenzen",
         "DESCRIPTION": "Ich arbeite sowohl eigenständig als auch im Team hervorragend. Hier ist, was meine Kollegen über die Zusammenarbeit mit mir sagen.",
         "FEEDBACKS": {
-            "REFERENCE_1": "Brian hat das Team wirklich zusammengehalten mit seiner großartigen Organisation und klaren Kommunikation. Ohne sein Engagement wären wir nicht so weit gekommen.",
+            "REFERENCE_1": "Brian hat das Team wirklich zusammengehalten mit seiner grossartigen Organisation und klaren Kommunikation. Ohne sein Engagement wären wir nicht so weit gekommen.",
             "REFERENCE_2": "Brian war ein ausgezeichneter Kollege. Seine strukturierte Arbeitsweise und innovative Denkweise haben die Effizienz unseres Teams erheblich verbessert.",
             "REFERENCE_3": "Die Zusammenarbeit mit Brian war eine Freude. Seine Fähigkeit, Probleme schnell und effektiv zu lösen, war von unschätzbarem Wert für das Team."
         }
