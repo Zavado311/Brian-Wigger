@@ -107,10 +107,16 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 720px) {
   .blackBackground {
     .overFooter {
       .aboutMe {
+        .directions {
+          .socialMedia ul {
+            gap: 18px;
+          }
+        }
+
         .copyright {
           font-size: 12px;
         }

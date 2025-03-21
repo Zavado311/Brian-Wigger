@@ -207,11 +207,14 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 620px) {
   .overall {
     .centerAll {
       .sayHiBackground {
         .texts {
+          .linksSocialMedia ul {
+            gap: 16px;
+          }
           .sayHiText {
             margin-bottom: 25px;
             .textSayHi {

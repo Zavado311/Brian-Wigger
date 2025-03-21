@@ -5,6 +5,7 @@
   <div
     class="aboutProject"
     (mouseleave)="hideInformations()"
+    (mouseenter)="showInformations()"
     [ngClass]="reversed ? 'reversedClass' : ''"
   >
     <a [routerLink]="project.link" target="_blank">
@@ -14,7 +15,6 @@
           reversedImageProject: reversed,
           showColoredImage: mouseOnProject
         }"
-        (mouseenter)="showInformations()"
       >
         <img
           [ngClass]="mouseOnProject ? 'showColoredImage' : ''"
@@ -25,7 +25,7 @@
           class="showBorder"
           [ngClass]="{
             reversedShowBorder: reversed,
-            'showIt ': mouseOnProject
+            'showIt': mouseOnProject
           }"
         ></div>
         <div

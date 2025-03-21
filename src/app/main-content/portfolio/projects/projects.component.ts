@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
   mouseOnProject = false;
 
   ngOnInit(): void {
-    this.checkScreenSize();
+    this.setDesign();
   }
 
   @Input() project!: {
@@ -32,22 +32,30 @@ export class ProjectsComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any): void {
-    this.checkScreenSize();
+    this.setDesign();
   }
 
-  checkScreenSize(): void {
+  setDesign(): void {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth < 1500) {
-      this.showInformations();
+    if (screenWidth < 1450) {
+      this.mouseOnProject = true;
     }
   }
 
   showInformations() {
-    this.mouseOnProject = true;
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth > 1450) {
+      this.mouseOnProject = true;
+    }
   }
 
   hideInformations() {
-    this.mouseOnProject = false;
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth > 1450) {
+      this.mouseOnProject = false;
+    }
   }
 }
